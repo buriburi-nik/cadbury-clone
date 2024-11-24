@@ -153,7 +153,7 @@ header {
 
 /* main  */
 /* section new creation */
-/* New Creations Section */
+/* --------------------------New Creations Section -----------------------------*/
 .new-creation {
     padding: 50px 20px;
     background-color: #f8f8f8;
@@ -176,12 +176,30 @@ header {
 /* Cards Container */
 .cards-container {
     display: flex;
-    flex-wrap: nowrap;
+    padding: 20px;
+    /* flex-wrap: wrap; */
     justify-content: center;
     gap: 15px;
     overflow-x: auto;
     margin-top: 2rem;
+    scrollbar-color: #45297c #e4daec;
+    scrollbar-width: thin;
+    scroll-snap-type: x mandatory; 
 }
+
+.cards-container::-webkit-scrollbar {
+    height: 10px; /* Height of horizontal scrollbar */
+}
+
+.cards-container::-webkit-scrollbar-thumb {
+    background: #45297c; /* Scrollbar handle color */
+    border-radius: 5px; /* Rounded edges */
+}
+
+.cards-container::-webkit-scrollbar-track {
+    background: #e4daec; /* Scrollbar track color */
+}
+
 /* backgroung img of cards */
 .imgCard {
     background: url('./src/homepage/bg\ card.png') no-repeat center;
@@ -192,6 +210,7 @@ header {
 
 /* Individual Image Card */
 .imgCard {
+    flex: 0 0 300px;
     position: relative; 
     width: 300px;
     height: 350px;
@@ -206,6 +225,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    scroll-snap-align: center;
 }
 
 /* Hover Effect */
@@ -255,11 +275,65 @@ header {
     font-weight: 500;
 }
 
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.nav-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #45297c;
+    background-color: #45297c;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.nav-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #45297c;
+    background-color: #45297c;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #5e3ea1;
+}
+
+.nav-btn:disabled {
+    background-color: #e4daec;
+    color: #999;
+    cursor: not-allowed;
+}
+
+#currentSlide {
+    font-size: 18px;
+    color: #45297c;
+    font-weight: bold;
+}
 
 
 
 
-/* visit us section */
+/* -----------------------visit us section --------------------------*/
 .visit-us {
     padding: 50px 20px;
     background-color: #f8f8f8;
@@ -419,4 +493,10 @@ header {
   }
   
   
-  
+  /* Responsivenes */
+  /* for img card in new creation */
+  @media (min-width: 768px) {
+    .cards-container {
+        justify-content: flex-start; /* Remove wrapping and keep a horizontal layout */
+    }
+  }
