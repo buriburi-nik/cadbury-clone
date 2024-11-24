@@ -153,17 +153,20 @@ header {
 
 /* main  */
 /* section new creation */
-/* New Creations Section */
+/* --------------------------New Creations Section -----------------------------*/
 .new-creation {
     padding: 50px 20px;
     background-color: #f8f8f8;
     text-align: center;
+    /* changw 25 11 */
+    padding: 2rem 1px 0px 1px;
 }
 
 .create h1 {
     font-size: 46px;
     color: #45297c;
     margin-bottom: 15px;
+    letter-spacing: 1.5px;
 }
 
 .create p {
@@ -176,12 +179,30 @@ header {
 /* Cards Container */
 .cards-container {
     display: flex;
-    flex-wrap: nowrap;
+    padding: 20px;
+    /* flex-wrap: wrap; */
     justify-content: center;
     gap: 15px;
     overflow-x: auto;
     margin-top: 2rem;
+    scrollbar-color: #45297c #e4daec;
+    scrollbar-width: thin;
+    scroll-snap-type: x mandatory; 
 }
+
+.cards-container::-webkit-scrollbar {
+    height: 10px; /* Height of horizontal scrollbar */
+}
+
+.cards-container::-webkit-scrollbar-thumb {
+    background: #45297c; /* Scrollbar handle color */
+    border-radius: 5px; /* Rounded edges */
+}
+
+.cards-container::-webkit-scrollbar-track {
+    background: #e4daec; /* Scrollbar track color */
+}
+
 /* backgroung img of cards */
 .imgCard {
     background: url('./src/homepage/bg\ card.png') no-repeat center;
@@ -192,6 +213,7 @@ header {
 
 /* Individual Image Card */
 .imgCard {
+    flex: 0 0 300px;
     position: relative; 
     width: 300px;
     height: 350px;
@@ -206,6 +228,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    scroll-snap-align: center;
 }
 
 /* Hover Effect */
@@ -255,90 +278,241 @@ header {
     font-weight: 500;
 }
 
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.nav-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #45297c;
+    background-color: #45297c;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
 
 
+.nav-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #45297c;
+    background-color: #45297c;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
 
+.nav-btn:hover {
+    background-color: #5e3ea1;
+}
 
-/* visit us section */
+.nav-btn:disabled {
+    background-color: #e4daec;
+    color: #999;
+    cursor: not-allowed;
+}
+
+#currentSlide {
+    font-size: 18px;
+    color: #45297c;
+    font-weight: bold;
+}
+/*----------------------- Cadbury story----------------------------- */
+
+.cadbury-stories {
+    text-align: center;
+    padding: 2rem 1px 0px 1px;
+    background-image: url('https://images.ctfassets.net/pmzhtobns06n/3VOj7B2ODRaKaqQUEwr0eJ/9de6ee9ec9edbd376d84a94ab1fbfe20/Background_Texture.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #5a2d82;
+    height: 800px;
+    
+  }
+  
+  .cadbury-stories .scontent h1 {
+    margin-top: 2rem;
+    font-size: 46px;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    letter-spacing: 1.px;
+    text-transform: uppercase;
+  }
+  
+  .cadbury-stories .scontent p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #666;
+  }
+  
+  /* Images container styling */
+  .images {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 2em;
+    margin-bottom: 1rem;
+  }
+  
+  /* Individual image styling */
+  .image {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Unique image positioning for staggered effect */
+  #image-1 {
+    margin-top: 100px;
+    width: 258px;
+    height: 254px;
+  }
+  
+  #image-2 {
+    margin-top: 20px;
+    width: 316px;
+    height: 312px;
+  }
+  
+  #image-3 {
+    margin-top: -10px;
+    width: 374px;
+    height: 372px;
+  }
+  
+  #image-4 {
+    margin-top: -10px;
+    width: 256px ;
+    height: 252px;
+  }
+  
+  #image-5 {
+    margin-top: 20;
+    width: 318px;
+    height: 314px;
+  }
+
+  .hazelnut {
+    position: relative;
+    width: 600px;
+    max-width: 234px;
+    bottom: 120px;
+    left: 970px; 
+  }
+  
+  .hazelnut-image {
+    width: 120%;
+    height: auto;
+    display: flex;
+  }
+  
+  
+
+/* -----------------------visit us section --------------------------*/
+
+/* WHY NOT VISIT Section */
 .visit-us {
     padding: 50px 20px;
-    background-color: #f8f8f8;
     text-align: center;
+    background-color: #f9f9f9;
 }
 
 .visit h1 {
     font-size: 46px;
-    color: #45297c;
-    margin-bottom: 15px;
+    color: #45297c ;
+    margin-bottom: 30px;
+    margin-bottom: 30px;
+    letter-spacing: 1.5px;
 }
 
+/* Cards Container */
 .cards-container-end {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
-    overflow-x: auto;
+    flex-wrap: wrap;
+    gap: 20px;
     margin-top: 2rem;
 }
-/* backgroung img of cards */
-.imgCard-end {
-    background: url('./src/homepage/bg\ card.png') no-repeat center;
-    background-size:cover; 
-    position: absolute;
-  }
 
-/* Individual Image Card */
+/* Individual Card */
 .imgCard-end {
     position: relative; 
-    width: 290x;
+    width: 300x;
     height: 350px;
     max-width: 320px;
-    background-color: #E4DAEC;
+    background-color: #4B0983;
     border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    transition: transform 0.3s ease;
 }
 
-/* Hover Effect */
 .imgCard-end:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
 }
 
-
-/* Additional Text Box Styling */
-.text-box-end  h4{
-    color: white;
-    border: 2px black solid;
-    padding: 1px;
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
- /* Image Styling */
+/* Card Image */
 .card-img-end img {
     width: 100%;
-    height: 200px; 
-    object-fit:cover; 
+    height: 225px;
+}
+
+/* Card Text */
+.text-box-end {
+    padding: 15px;
+    background-color: #4B0983; 
+    align-items: center;
+    justify-content: center;
     
 }
 
-/* Product Name */
-.product-name-end {
-    font-size: 16px;
-    color: #333;
-    padding: 10px 15px;
-    margin-top: 15px;
-    font-weight: 500;
-}
- 
+.text-box-end  h4{
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+  } 
+
+
+
+
 /* pouring */
+
 #pouring{
     width: 100%;
     height: 300px;
@@ -419,4 +593,10 @@ header {
   }
   
   
-  
+  /* Responsivenes */
+  /* for img card in new creation */
+  @media (min-width: 768px) {
+    .cards-container {
+        justify-content: flex-start; /* Remove wrapping and keep a horizontal layout */
+    }
+  }
