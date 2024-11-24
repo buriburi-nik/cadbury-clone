@@ -164,6 +164,7 @@ header {
     font-size: 46px;
     color: #45297c;
     margin-bottom: 15px;
+    letter-spacing: 1.5px;
 }
 
 .create p {
@@ -347,6 +348,7 @@ header {
     color: #45297c ;
     margin-bottom: 30px;
     margin-bottom: 30px;
+    letter-spacing: 1.5px;
 }
 
 /* Cards Container */
