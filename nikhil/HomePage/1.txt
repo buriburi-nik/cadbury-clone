@@ -1,0 +1,90 @@
+
+.cadbury-stories {
+    text-align: center;
+    padding: 3em 2em;
+    background-image: url('https://images.ctfassets.net/pmzhtobns06n/3VOj7B2ODRaKaqQUEwr0eJ/9de6ee9ec9edbd376d84a94ab1fbfe20/Background_Texture.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #5a2d82;
+}
+
+.cadbury-stories .scontent h1 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.cadbury-stories .scontent p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #4a4a4a;
+}
+
+.images {
+    display: block;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 5px; /* Reduce this to control the gap */
+}
+
+.image {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Reducing the gap between images by adjusting the position */
+#image-1 {
+    position: relative;
+    bottom: 10;
+    left: 50;
+    width: 254px;
+    height: 258px;
+}
+
+#image-2 {
+    position: relative;
+    top: 10px;  
+    left: 20px; 
+    width: 312px;
+    height: 316px;
+}
+
+#image-3 {
+    position: relative;
+    top: 20px;  
+    left: 40px;
+    width: 370px;
+    height: 374px;
+}
+
+#image-4 {
+    position: relative;
+    top: 30px;  /* Reduced from 150px */
+    left: 60px; /* Reduced from 300px */
+    width: 254px ;
+    height: 254px;
+}
+
+#image-5 {
+    position: relative;
+    top: 40px;  
+    left: 80px; 
+    width: 312px;
+    height: 318px;
+}

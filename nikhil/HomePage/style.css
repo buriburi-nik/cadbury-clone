@@ -158,6 +158,8 @@ header {
     padding: 50px 20px;
     background-color: #f8f8f8;
     text-align: center;
+    /* changw 25 11 */
+    padding: 2rem 1px 0px 1px;
 }
 
 .create h1 {
@@ -330,9 +332,112 @@ header {
     color: #45297c;
     font-weight: bold;
 }
+/*----------------------- Cadbury story----------------------------- */
 
+.cadbury-stories {
+    text-align: center;
+    padding: 2rem 1px 0px 1px;
+    background-image: url('https://images.ctfassets.net/pmzhtobns06n/3VOj7B2ODRaKaqQUEwr0eJ/9de6ee9ec9edbd376d84a94ab1fbfe20/Background_Texture.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #5a2d82;
+    height: 800px;
+    
+  }
+  
+  .cadbury-stories .scontent h1 {
+    margin-top: 2rem;
+    font-size: 46px;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    letter-spacing: 1.px;
+    text-transform: uppercase;
+  }
+  
+  .cadbury-stories .scontent p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #666;
+  }
+  
+  /* Images container styling */
+  .images {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 2em;
+    margin-bottom: 1rem;
+  }
+  
+  /* Individual image styling */
+  .image {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Unique image positioning for staggered effect */
+  #image-1 {
+    margin-top: 100px;
+    width: 258px;
+    height: 254px;
+  }
+  
+  #image-2 {
+    margin-top: 20px;
+    width: 316px;
+    height: 312px;
+  }
+  
+  #image-3 {
+    margin-top: -10px;
+    width: 374px;
+    height: 372px;
+  }
+  
+  #image-4 {
+    margin-top: -10px;
+    width: 256px ;
+    height: 252px;
+  }
+  
+  #image-5 {
+    margin-top: 20;
+    width: 318px;
+    height: 314px;
+  }
 
-
+  .hazelnut {
+    position: relative;
+    width: 600px;
+    max-width: 234px;
+    bottom: 120px;
+    left: 970px; 
+  }
+  
+  .hazelnut-image {
+    width: 120%;
+    height: auto;
+    display: flex;
+  }
+  
+  
 
 /* -----------------------visit us section --------------------------*/
 
