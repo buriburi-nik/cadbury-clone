@@ -334,85 +334,78 @@ header {
 
 
 /* -----------------------visit us section --------------------------*/
+
+/* WHY NOT VISIT Section */
 .visit-us {
     padding: 50px 20px;
-    background-color: #f8f8f8;
     text-align: center;
+    background-color: #f9f9f9;
 }
 
 .visit h1 {
     font-size: 46px;
-    color: #45297c;
-    margin-bottom: 15px;
+    color: #45297c ;
+    margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
+/* Cards Container */
 .cards-container-end {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
-    overflow-x: auto;
+    flex-wrap: wrap;
+    gap: 20px;
     margin-top: 2rem;
 }
-/* backgroung img of cards */
-.imgCard-end {
-    background: url('./src/homepage/bg\ card.png') no-repeat center;
-    background-size:cover; 
-    position: absolute;
-  }
 
-/* Individual Image Card */
+/* Individual Card */
 .imgCard-end {
     position: relative; 
-    width: 290x;
+    width: 300x;
     height: 350px;
     max-width: 320px;
-    background-color: #E4DAEC;
+    background-color: #4B0983;
     border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    transition: transform 0.3s ease;
 }
 
-/* Hover Effect */
 .imgCard-end:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
 }
 
-
-/* Additional Text Box Styling */
-.text-box-end  h4{
-    color: white;
-    border: 2px black solid;
-    padding: 1px;
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
- /* Image Styling */
+/* Card Image */
 .card-img-end img {
     width: 100%;
-    height: 200px; 
-    object-fit:cover; 
+    height: 225px;
+}
+
+/* Card Text */
+.text-box-end {
+    padding: 15px;
+    background-color: #4B0983; 
+    align-items: center;
+    justify-content: center;
     
 }
 
-/* Product Name */
-.product-name-end {
-    font-size: 16px;
-    color: #333;
-    padding: 10px 15px;
-    margin-top: 15px;
-    font-weight: 500;
-}
- 
+.text-box-end  h4{
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+  } 
+
+
+
+
 /* pouring */
+
 #pouring{
     width: 100%;
     height: 300px;
