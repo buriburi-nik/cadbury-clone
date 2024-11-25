@@ -1,0 +1,336 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Franklin Gothic Medium";
+  }
+  .header {
+    background-color: #4b0e83;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: calc(100% + 3px);
+    transition: transform 0.3s;
+    height: 120px;
+    border-bottom: 4px solid goldenrod;
+  }
+  
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+  }
+  .logo img {
+    height: 90px;
+    margin-right: 10px;
+    margin-top: 15px;
+  }
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    margin-left: auto;
+  }
+  .nav_menu li {
+    list-style: none;
+  }
+  .nav_menu li a {
+    color: white;
+    text-decoration: none;
+    transition: color.3s;
+  }
+  .first1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .section1 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .section1 img {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    z-index: 2;
+  }
+  .winsec {
+    border-top: 4px solid goldenrod;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #4b0e83;
+    gap: 10px;
+  }
+  .winsec1 {
+    width: 100%;
+    height: 100%;
+  }
+  .winsec h1 {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    margin-top: 70px;
+  }
+  .winsec p {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+  }
+  .btn .golden {
+    height: 48px;
+    width: 300px;
+    padding: 20px 16px;
+    margin: 40px;
+    font-size: 18px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: #4b0e83;
+    background: linear-gradient(to right, #d4af37, #f3e5ab, #d4af37, #f3e5ab);
+    transition: background-position 0.7s ease, transform 0.2s;
+    background-position: right;
+    letter-spacing: 0.2ch;
+    background-size: 200%;
+    font-weight: bold;
+  }
+  .btn .golden{
+      display: inline-block;
+      margin: 0 0.5rem;
+    
+      animation: bounce; /* referring directly to the animation's @keyframe declaration */
+      animation-duration: 2s;
+  }
+  .btn .golden:hover {
+    cursor: pointer;
+    background-position: left;
+  }
+  .productsec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #4b0e83;
+  }
+  .product {
+    text-align: center;
+  }
+  .product h2 {
+    font-size: 70px;
+    color: #d5b85a;
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+  .articlemain {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 20px 10px;
+  }
+  .step {
+    position: relative;
+    margin-left: 60px;
+  }
+  .step {
+    animation: zoomIn; 
+    animation-duration: 2s;
+  }
+  .step_num {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 3px solid #4b0e83;
+    background: #fff;
+    font-weight: 900;
+    font-size: 20px;
+    width: 3rem;
+    height: 3rem;
+    left: 0;
+    top: 0;
+  }
+  .step__number {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    color: #4b0e83;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  .step_image {
+    display: block;
+    border-radius: 50%;
+    border: 0.2rem solid #fff;
+    max-width: 24rem;
+    box-sizing: border-box;
+    box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease-in-out;
+  }
+  .step_image:hover {
+    transform: scale(1.05);
+    box-shadow: 6px 12px 30px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
+  .step_title {
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color: white;
+  }
+  .articlemain a {
+    color: white;
+    font-size: 16px;
+  }
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn .golden {
+    height: 48px;
+    width: 300px;
+    padding: 20px 16px;
+    margin: 40px;
+    font-size: 18px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: #4b0e83;
+    background: linear-gradient(to right, #d4af37, #f3e5ab, #d4af37, #f3e5ab);
+    transition: background-position 0.7s ease, transform 0.2s;
+    background-position: right;
+    letter-spacing: 0.2ch;
+    background-size: 200%;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .btn .golden:hover {
+    cursor: pointer;
+    background-position: left;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4b0e83;
+  }
+  .first {
+    position: relative;
+    margin-top: 20px;
+    color: white;
+    margin: 80px 40px;
+  }
+  .maincontent {
+    margin: 20px 80px;
+  }
+  h4 {
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  .maincontent p {
+    font-size: 15px;
+  }
+  .maincontent a b {
+    color: white;
+    text-decoration: underline;
+  }
+  .footer {
+    background-color: white;
+    padding: 15px 40px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .footer-links a {
+    color: #2d004d;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer__social {
+    display: flex;
+    gap: 15px;
+  }
+  .social-icons {
+    font-size: 24px;
+    color: #2d004d;
+    transition: transform 0.3s;
+  }
+  .social-icons:hover {
+    transform: scale(1.2);
+  }
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #3b0073;
+  }
+  
+  .copyright {
+    font-size: 14px;
+  }
+  
+  .mondelez-logo {
+    width: 120px;
+  }
+  
