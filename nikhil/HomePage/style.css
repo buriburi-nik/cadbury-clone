@@ -129,9 +129,10 @@ header {
 }
 
 .hero-button {
-  display: flex; /* Use flexbox for centering */
-  align-items: center; /* Center text vertically */
-  justify-content: center; /* Center text horizontally */
+  display: flex; 
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center; 
   background: linear-gradient(to right, #d4af37, #f3e5ab, #d4af37, #f3e5ab);
   color: #4a0982;
   text-decoration: none;
@@ -142,10 +143,10 @@ header {
   text-align: center;
   padding: 10px 20px;
   transition: background-position 0.7s ease, transform 0.2s;
-  white-space: nowrap; /* Prevent text wrapping */
-  overflow: hidden; /* Avoid text overflowing */
-  text-overflow: ellipsis; /* Add ellipsis for overflow text if needed */
-  box-sizing: border-box; /* Ensures padding fits the button size */
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  box-sizing: border-box; 
 }
 
 .hero-button:hover {
@@ -155,6 +156,7 @@ header {
 }
 
 .hero-button--small {
+  text-transform: uppercase;
   width: 240px;
   height: 48px;
   font-size: 1.2rem;
@@ -229,19 +231,37 @@ header {
 }
 
 /* backgroung img of cards */
-.imgCard {
-    background: url('./src/homepage/bg\ card.png') no-repeat center;
-    background-size: cover; /* Ensures the background fills the section */
-    padding: 50px 0;
-    position: relative;
+.imgCardn {
+  width: 296px;
+  height: 296px;
+  flex: 0 0 300px;
+  position: relative; 
+  max-width: 320px;
+  background-color: #e5ecda;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scroll-snap-align: center;
   }
 
+.imgCard{
+  width: 300px;
+    height: 350px;
+    background: url('./src/homepage/bg\ card.png') no-repeat center;
+    background-size: cover; 
+    padding: 50px 0;
+    position: relative;  
+}
 /* Individual Image Card */
 .imgCard {
     flex: 0 0 300px;
     position: relative; 
-    width: 300px;
-    height: 350px;
     max-width: 320px;
     background-color: #E4DAEC;
     border-radius: 20px;
@@ -257,7 +277,7 @@ header {
 }
 
 /* Hover Effect */
-.imgCard:hover {
+.imgCard .imgCardn:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
 }
@@ -363,8 +383,10 @@ header {
   margin-top: 100px;
   background-image: url("./src/Animate/background-anima.jpeg");
   padding: 0%;
+  
   justify-content: center;
   background-size: contain;
+
 }
 
 .animated-cards h1 {
@@ -460,7 +482,16 @@ header {
 
 .anim-text {
   text-align: center;
-  padding: 10px 15px;
+  /* padding: 10px 15px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 2%;
+  
 }
 
 .recipesSpan {
@@ -470,6 +501,7 @@ header {
   border-top: 2px solid white;
   border-bottom: 2px solid white;
   letter-spacing: 0.1ch;
+  text-transform: uppercase;
   margin: 10px;
 }
 
@@ -477,6 +509,7 @@ header {
   font-size: 34px;
   letter-spacing: 0.01ch;
   color: #d1a752;
+  text-transform: uppercase;
   margin: 10px;
 }
 
@@ -515,6 +548,7 @@ header {
 .anim {
   margin: auto;
   width: 240px;
+  align-items: center;
 }
 
 /*----------------------- Cadbury story----------------------------- */
@@ -802,55 +836,106 @@ header {
     /* border: 1px solid red; */
 }
 #poster1>#img{
-    background-image: url("https://images.ctfassets.net/pmzhtobns06n/3SKSFYVQOisuTtQ3cFYnnK/21d58b2d361ddd319377b89d09234539/Advent_Image_Destop_X2__2_.png?fm=webp&q=80&fm=webp&q=80");
-    background-size: contain;
+
+background-image: url("./src/poster/p1\(1\).webp");  background-size: contain;
 }
 #poster1>#img1{
-    background-image: url("https://images.ctfassets.net/pmzhtobns06n/2no6KljpAOFVYUj4wB79mA/b3be2908e2774ff28519ddeede8d18d2/CGD-Basket_gift-1440x1200.jpg?fm=webp&q=80&fm=webp&q=80");
-    background-size: contain;
+background-image: url("./src/poster/p1\(2\).webp");
+  background-size: contain;
 }
 
 #poster2{
   width: 100%;
   height: 600px;
-  background-image: url("https://images.ctfassets.net/pmzhtobns06n/4AXdo20zKJPIjnhtHt4ND0/e9d45c3aff03218c270bc5c88b89401a/Desktop_UK_Landing_Page.jpg?fm=webp&q=80");
+  background-image: url("./src/poster/p2.webp"); 
   background-size: cover;
   background-repeat: no-repeats;
   justify-items: center;
-
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
 }
 
-#poster3{
+#poster2 .anim-text {
+  text-align: center; /* Center text horizontally */
+  max-width: 800px; /* Optional max-width for better readability */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center content inside the container */
+  align-items: center; /* Horizontally center content inside */
+}
+
+#poster2 h2 {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0 0 20px;
+}
+
+#poster2 p {
+  font-size: 18px;
+  margin: 0 0 30px;
+}
+
+/* --------------------poster 3----------------- */
+
+
+#poster3 {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
   width: 100%;
   height: 400px;
   background-color: #4b0984;
 }
 
+#poster3 .anim-text {
+  text-align: center; 
+  max-width: 800px; 
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+#poster3 h2 {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0 0 20px;
+}
+
+#poster3 p {
+  font-size: 18px;
+  margin: 0 0 30px;
+}
+/* --------------------video---------------------------- */
 #videoPoster{
   width: 100%;
 }
 
-#title{
-  width: 100%;
-  height: 160px;
-  /* border: 1px solid black; */
+#title {
   display: flex;
-  flex-direction: column;
-  justify-content:end;
-  align-items: center;
-  line-height:0.5;
+  flex-direction: column; /* Align text vertically */
+  justify-content: center; /* Centers content vertically */
+  align-items: center; /* Centers content horizontally */
+  text-align: center; /* Centers text */
+  height: 100vh; /* Makes the div take the full height of the viewport */
+  color: rgb(240, 15, 15); /* Makes the text white for better visibility */
+  padding: 20px;
+  box-sizing: border-box;
 }
-#title>#head{
-  font-size: 52px;
-  font-family: sans-serif;
-  font-weight:700;
-  line-height: 48px;
-  color: rgb(75, 9, 131);
-  line-height: 0.1;
+
+#title p {
+  margin: 10px 0; /* Adds spacing between paragraphs */
+  font-size: 24px; /* Adjust font size as needed */
 }
-#title>p{
-  margin-top: 5px;
+
+#head {
+  font-size: 36px; /* Larger font size for the main heading */
+  font-weight: bold;
 }
+
 
 #card1{
   width: 100%;
@@ -876,7 +961,7 @@ header {
   height: 1300px;
   /* border: 1px solid black; */
   display: flex;
-  background-image: url(https://plus.unsplash.com/premium_photo-1674048381806-814bb2126f73?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2hpdGUlMjBicmlja3xlbnwwfHwwfHx8MA%3D%3D);
+  background-image: url(./src/poster/p4BG.jpeg);
   background-size: cover;
 }
 #poster4>div{
@@ -888,33 +973,7 @@ header {
   justify-content: center;
   gap: 50px;
 }
-#poster4>div>div{
-  border-radius: 20px;
-}
-#poster4>#left>div{
-    width: 71%;
-    height: 45%;
-    /* border: 1px solid black; */
-    margin-left: 150px;
-    margin-bottom: 30px;
-}
-#poster4>#right>#top{
-  width: 71%;
-  height: 45%;
-  /* border: 1px solid black; */
-  margin-left: 50px;
-  margin-top: 50px;
-  background-image: url(https://images.ctfassets.net/pmzhtobns06n/5tZqcteYF02OSW5rObw0IV/591df311a817bea7b5a4823ec3d1a469/GLOBAL_CROSS_LINKS_-_DESKTOP_-_200_YEARS.png?fm=webp&q=80&fm=webp&q=80);
-  background-size: cover;
-}
-#poster4>#right>#bottom{
-  width: 71%;
-  height: 45%;
-  /* border: 1px solid black; */
-  margin-left: 50px;
-  background-image: url(https://images.ctfassets.net/pmzhtobns06n/7Ei3T73AqiLE7o7UbiJnz3/dc791e12658a547b6c41cfb5104e3c18/Background_images_desk.jpg?fm=webp&q=80&fm=webp&q=80);
-  background-size: cover;
-}
+
 #poster5{
   width: 100%;
   height: 500px;
