@@ -1,90 +1,119 @@
+<div class="animated-cards">
+        <h1>DISCOVER MORE FROM CADBURY</h1>
+        <div class="anim-main">
+            <div class="card card1">
+                <div class="anim-text">
+                    <span class="recipesSpan"> RECIPES </span>
+                    <h2>DELICIOUS CADBURY RECIPES</h2>
+                    <p>Get creative in the kitchen with your favourite Cadbury chocolates</p>
+                    <button class="golden anim">DISCOVER RECIPES</button>
+                </div>
+            </div>
+            <div class="card card2">
+                <div class="anim-text">
+                    <span class="recipesSpan"> ANNIVERSARY </span>
+                    <h2>200 YEARS OF CADBURY</h2>
+                    <p>As we celebrate turning 200 this year, we’re reflecting on all of the special moments we’ve shared. See how you can join in the celebrations with us.</p>
+                    <button class="golden anim">CELEBRATE WITH US</button>
+                </div>
+            </div>
+        </div>
+        </div>
 
-.cadbury-stories {
-    text-align: center;
-    padding: 3em 2em;
-    background-image: url('https://images.ctfassets.net/pmzhtobns06n/3VOj7B2ODRaKaqQUEwr0eJ/9de6ee9ec9edbd376d84a94ab1fbfe20/Background_Texture.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: #5a2d82;
+
+
+
+
+
+
+        .animated-cards {
+  margin-top: 100px;
+  background-color: #4a0982;
+  padding: 50px 0;
+}
+.animated-cards h1 {
+  margin: auto;
+  text-align: center;
+  font-size: 52px;
+  color: white;
+}
+.anim-main {
+  display: flex;
+  justify-content: center;
+  margin: 70px 20px;
 }
 
-.cadbury-stories .scontent h1 {
-    font-size: 2.5em;
-    margin-bottom: 1em;
-    font-weight: bold;
-    text-transform: uppercase;
+.card {
+  width: 530px;
+  height: 610px;
+  border-radius: 15px;
+  margin: 30px;
+  box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-.cadbury-stories .scontent p {
-    font-size: 1.2em;
-    line-height: 1.8;
-    color: #4a4a4a;
+.card1 {
+  background: url("assets/animated-card1.webp");
+  background-size: 110%;
+  background-position: center;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  padding: 20px 40px;
+  transition: background-size 0.5s ease-in-out;
+}
+.card1:hover {
+  background-size: 130%;
+  cursor: pointer;
 }
 
-.images {
-    display: block;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    gap: 5px; /* Reduce this to control the gap */
+.card2 {
+  background-image: url("assets/animated-card2.webp");
+  background-size: 110%;
+  background-position: center;
+  margin-top: 90px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  padding: 20px 40px;
+  transition: background-size 0.5s ease-in-out;
+}
+.card2:hover {
+  background-size: 130%;
+  cursor: pointer;
 }
 
-.image {
-    width: 300px;
-    height: 300px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.anim-text {
+  text-align: center;
+  padding: 10px 15px;
+}
+.recipesSpan {
+  color: white;
+  font-size: 24px;
+  padding: 2px 0;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  letter-spacing: 0.1ch;
+  margin: 10px;
+}
+.anim-text h2 {
+  font-size: 34px;
+  letter-spacing: 0.01ch;
+  color: #d1a752;
+  margin: 10px;
+}
+.anim-text p {
+  font-size: 16px;
+  color: white;
+  font-family: "Franklin Gothic";
+  letter-spacing: 0.01ch;
+  margin: 10px;
+}
+.anim {
+  margin: auto;
+  width: 240px;
 }
 
-.image img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    transition: transform 0.3s ease;
-}
-
-.image:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-/* Reducing the gap between images by adjusting the position */
-#image-1 {
-    position: relative;
-    bottom: 10;
-    left: 50;
-    width: 254px;
-    height: 258px;
-}
-
-#image-2 {
-    position: relative;
-    top: 10px;  
-    left: 20px; 
-    width: 312px;
-    height: 316px;
-}
-
-#image-3 {
-    position: relative;
-    top: 20px;  
-    left: 40px;
-    width: 370px;
-    height: 374px;
-}
-
-#image-4 {
-    position: relative;
-    top: 30px;  /* Reduced from 150px */
-    left: 60px; /* Reduced from 300px */
-    width: 254px ;
-    height: 254px;
-}
-
-#image-5 {
-    position: relative;
-    top: 40px;  
-    left: 80px; 
-    width: 312px;
-    height: 318px;
+.card {
+  animation: slideInUp;
+  animation-duration: 2s;
 }
