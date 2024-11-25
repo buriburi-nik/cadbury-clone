@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.hero {
+  background-color: #4a0982;
+  width: 100%;
+  height: 700px;
+  padding: 80px 0px 0px;
+  border: 0px solid rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: Gibson-Regular, sans-serif;
+  font-weight: 400;
+  text-align: center;
+  line-height: 24px;
+  color: rgb(255, 255, 255);
+}
+.hero-left {
+  width: 574px;
+  height: 540px;
+  padding: 0px 56px 0px 32px;
+  border: 0px solid rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 24px;
+}
+.hero-right {
+  width: 608px;
+  height: 405px;
+  padding: 100px 100px 0px 0px;
+  border: 0px solid rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  line-height: 24px;
+}
+.hero-right h1 {
+  font-size: 34px;
+  letter-spacing: 0.1ch;
+  margin-left: 16px;
+  padding: 0 0 26px;
+  line-height: 1.05;
+}
+.hero-right span {
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  margin-left: 16px;
+  text-align: center;
+}
+.hero-right p {
+  margin-left: 16px;
+  padding: 5px;
+  margin-top: 10px;
+}
+.golden {
+  height: 48px;
+  width: 240px;
+  padding: 20px 16px;
+  margin: 50px 15px;
+  font-size: 18px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  color: #4a0982;
+  background: linear-gradient(to right, #d4af37, #f3e5ab, #d4af37, #f3e5ab);
+  transition: background-position 0.7s ease, transform 0.2s;
+  background-position: right;
+  letter-spacing: 0.2ch;
+  background-size: 200%;
+}
+
+.golden:hover {
+  cursor: pointer;
+  background-position: left;
+}
+
+/* Info */
+/* .info {
+    
+} */
+
+#ingredients,
+#nutri-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 800px;
+  height: 120px;
+  margin: auto;
+  color: #441775;
+  transition: border-top 0.3s ease, transform 0.2s;
+}
+#ingredients {
+  border-bottom: 1px solid #441775;
+}
+#ingredients:hover {
+  cursor: pointer;
+  border-top: 5px solid #f2d896;
+}
+#nutri-info:hover {
+  cursor: pointer;
+  border-top: 5px solid #f2d896;
+}
+
+/* Note */
+.note {
+  width: 935px;
+  margin: 50px auto;
+}
+.note p {
+  font-size: 18px;
+  font-style: italic;
+  color: #441775;
+  letter-spacing: 0.1ch;
+  font-family: "Franklin Gothic";
+}
+.note span {
+  font-style: normal;
+  letter-spacing: normal;
+}
+
+/* Recipes */
+
+.recipes {
+  width: 100%;
+  height: 603px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 400;
+  background-color: #441775;
+}
+.recipe-left {
+  width: 533px;
+  height: 443px;
+  padding: 0px 40px;
+  margin: 0 170px;
+  color: white;
+}
+.recipe-left h1 {
+  font-size: 52px;
+  margin-top: 10px;
+}
+.recipesSpan {
+  color: gold;
+  font-size: 24px;
+  padding: 2px 0;
+  border-top: 2px solid gold;
+  border-bottom: 2px solid gold;
+  letter-spacing: 0.1ch;
+}
+.recipe-left p {
+  margin: 10px 0;
+  font-family: "Franklin Gothic";
+}
+
+.recipe-right img {
+  margin-top: 3px;
+}
+
+/* Discover Recipes */
+.discover-rec {
+  height: 600px;
+  background: url("assets/coco-beans.webp");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sub-rec {
+  width: 473px;
+  /* height: 382px; */
+  text-align: center;
+}
+.sub-rec h1 {
+  font-size: 52px;
+  color: white;
+  letter-spacing: 0.1ch;
+  margin-top: 10px;
+}
+.sub-rec p {
+  color: white;
+  font-family: 'Franklin Gothic';
+  font-size: 16px;
+  letter-spacing: 0.05ch;
+  padding: 15px;
+}
+.sub-rec button {
+  width: 350px;
+  margin: 10px;
+}
+.sub-rec div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Section 2 */
+
+.discover-like {
+  background: url("assets/back-wall.webp");
+  width: 100%;
+  height: 619px;
+  margin-top: 100px;
+}
+#dl-heading {
+  font-size: 45px;
+  text-align: center;
+  color: #4a0982;
+}
+.cards-container {
+  overflow-x: auto; /* Enables horizontal scrolling */
+  display: flex;
+  overflow-y: hidden;
+  padding: 10px 0;
+  margin-top: 20px; 
+  scrollbar-color: #4a0982 #fff;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: nowrap; 
+  gap: 20px; 
+  padding-left: 10px; 
+}
+
+#card {
+  width: 296px;
+  height: 387px;
+  background: linear-gradient(to bottom, #e5daed 50%, #4a0982 50%);
+  border-radius: 15px;
+  box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  justify-content: space-between;
+}
+#card:hover {
+  transform: scale(1.05); 
+  box-shadow: 6px 12px 30px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+#card .top-head {
+  color: #441775;
+  background-color: #ebc373;
+  font-size: 12px;
+  margin: 10px;
+  width: 130px;
+  padding: 2px;
+  border-radius: 7px;
+  text-align: center;
+}
+
+.up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.description {
+  font-size: 24px;
+  color: white;
+  padding-top: 20px;
+  text-align: center;
+}
+#card {
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation: backInUp; 
+  animation-duration: 3s;
+}

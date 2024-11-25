@@ -1,0 +1,280 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* HERO SECTION */
+
+.gifts-hero {
+  height: 520px;
+  width: 100%;
+  background-image: url("assets/Hero-BG.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+}
+.gifts-hero h1 {
+  font-size: 72px;
+  color: #d1a856;
+  letter-spacing: 0.06ch;
+  animation: fadeInUp;
+  animation-duration: 2s;
+}
+.hero-head {
+  text-align: center;
+  margin: 0 100px;
+  width: 900px;
+}
+.gifts-hero p {
+  color: white;
+  font-size: 24px;
+  letter-spacing: 0.01ch;
+  animation: fadeInUp;
+  animation-duration: 3s;
+}
+.golden {
+  height: 48px;
+  width: 333px;
+  padding: 20px 16px;
+  margin: 50px 15px;
+  font-size: 18px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  color: #4a0982;
+  background: linear-gradient(to right, #d4af37, #f3e5ab, #d4af37, #f3e5ab);
+  transition: background-position 0.7s ease, transform 0.2s;
+  background-position: right;
+  letter-spacing: 0.2ch;
+  background-size: 200%;
+}
+.gifts-hero button {
+  animation: fadeInUp;
+  animation-duration: 4s;
+}
+
+.golden:hover {
+  cursor: pointer;
+  background-position: left;
+}
+
+/* MID SECTION */
+
+.second-head {
+  /* height: 288px; */
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #4a0982;
+}
+.head-text {
+  font-size: 52px;
+  width: 525px;
+  margin: 50px;
+}
+.head-para {
+  font-size: 16px;
+  width: 525px;
+  margin-top: 10px;
+  font-family: "Franklin Gothic";
+  letter-spacing: 0.01ch;
+}
+
+/* Section 2 Mid */
+.second-mid {
+  width: 1232px;
+  height: 592px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.sub-sec {
+  margin: 100px 0;
+}
+.sub-sec h1 {
+  font-size: 34px;
+  color: #4a0982;
+  margin: 10px 70px;
+}
+.sub-sec p {
+  font-size: 16px;
+  font-family: "Franklin Gothic";
+  margin: 10px 70px;
+}
+.purple-button {
+  height: 48px;
+  width: 240px;
+  padding: 20px 0px;
+  margin: 40px 70px;
+  font-size: 18px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  color: white;
+  background: #4a0982;
+  transition: background-color 1.2s ease, transform 0.2s;
+  letter-spacing: 0.2ch;
+}
+
+.purple-button:hover {
+  cursor: pointer;
+  background: rgba(90, 52, 125, 0.7);
+}
+
+/* Cards Section */
+
+.cards-head {
+  margin: auto;
+  text-align: center;
+  width: 1000px;
+  padding: 50px 120px;
+}
+.cards-head h1 {
+  font-size: 52px;
+  color: #4a0982;
+}
+.cards-head p {
+  font-size: 16px;
+  font-family: "Franklin Gothic";
+  padding: 10px 150px;
+  letter-spacing: 0.01ch;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#card {
+  height: 342px;
+  margin: 10px;
+  background-color: #4a0982;
+  box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+#card:hover {
+  transform: scale(1.05);
+  box-shadow: 6px 12px 30px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+#card div {
+  display: flex;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+}
+#card h1 {
+  text-align: center;
+  font-size: 19px;
+  color: white;
+}
+.animated-cards {
+  margin-top: 100px;
+  background-color: #4a0982;
+  padding: 50px 0;
+}
+.animated-cards h1 {
+  margin: auto;
+  text-align: center;
+  font-size: 52px;
+  color: white;
+}
+.anim-main {
+  display: flex;
+  justify-content: center;
+  margin: 70px 20px;
+}
+
+.card {
+  width: 530px;
+  height: 610px;
+  border-radius: 15px;
+  margin: 30px;
+  box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card1 {
+  background: url("assets/animated-card1.webp");
+  background-size: 110%;
+  background-position: center;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  padding: 20px 40px;
+  transition: background-size 0.5s ease-in-out;
+}
+.card1:hover {
+  background-size: 130%;
+  cursor: pointer;
+}
+
+.card2 {
+  background-image: url("assets/animated-card2.webp");
+  background-size: 110%;
+  background-position: center;
+  margin-top: 90px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  padding: 20px 40px;
+  transition: background-size 0.5s ease-in-out;
+}
+.card2:hover {
+  background-size: 130%;
+  cursor: pointer;
+}
+
+.anim-text {
+  text-align: center;
+  padding: 10px 15px;
+}
+.recipesSpan {
+  color: white;
+  font-size: 24px;
+  padding: 2px 0;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  letter-spacing: 0.1ch;
+  margin: 10px;
+}
+.anim-text h2 {
+  font-size: 34px;
+  letter-spacing: 0.01ch;
+  color: #d1a752;
+  margin: 10px;
+}
+.anim-text p {
+  font-size: 16px;
+  color: white;
+  font-family: "Franklin Gothic";
+  letter-spacing: 0.01ch;
+  margin: 10px;
+}
+.anim {
+  margin: auto;
+  width: 240px;
+}
+
+.card {
+  animation: slideInUp;
+  animation-duration: 2s;
+}
