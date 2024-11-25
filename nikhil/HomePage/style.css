@@ -509,6 +509,18 @@ header {
   } 
 
 
+  .imgCard-link-end {
+    text-decoration: none; 
+    color: inherit; 
+    display: block; 
+}
+
+.imgCard-link-end:hover .imgCard-end {
+    transform: scale(1.05); 
+    transition: transform 0.3s ease; 
+}
+
+
 
 
 /* pouring */
@@ -592,7 +604,141 @@ header {
     transition: color 0.3s;
   }
   
-  
+  /* --------------poster----------------------- */
+  #poster1{
+    width: 100%;
+    height: 600px;
+    /* border: 1px solid black; */
+    display: flex;
+}
+#poster1>div{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+#poster1>#img{
+    background-image: url("https://images.ctfassets.net/pmzhtobns06n/3SKSFYVQOisuTtQ3cFYnnK/21d58b2d361ddd319377b89d09234539/Advent_Image_Destop_X2__2_.png?fm=webp&q=80&fm=webp&q=80");
+    background-size: contain;
+}
+#poster1>#img1{
+    background-image: url("https://images.ctfassets.net/pmzhtobns06n/2no6KljpAOFVYUj4wB79mA/b3be2908e2774ff28519ddeede8d18d2/CGD-Basket_gift-1440x1200.jpg?fm=webp&q=80&fm=webp&q=80");
+    background-size: contain;
+}
+
+#poster2{
+  width: 100%;
+  height: 600px;
+  background-image: url("https://images.ctfassets.net/pmzhtobns06n/4AXdo20zKJPIjnhtHt4ND0/e9d45c3aff03218c270bc5c88b89401a/Desktop_UK_Landing_Page.jpg?fm=webp&q=80");
+  background-size: cover;
+  background-repeat: no-repeats;
+  justify-items: center;
+
+}
+
+#poster3{
+  width: 100%;
+  height: 400px;
+  background-color: #4b0984;
+}
+
+#videoPoster{
+  width: 100%;
+}
+
+#title{
+  width: 100%;
+  height: 160px;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content:end;
+  align-items: center;
+  line-height:0.5;
+}
+#title>#head{
+  font-size: 52px;
+  font-family: sans-serif;
+  font-weight:700;
+  line-height: 48px;
+  color: rgb(75, 9, 131);
+  line-height: 0.1;
+}
+#title>p{
+  margin-top: 5px;
+}
+
+#card1{
+  width: 100%;
+  height: 300px;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  gap:40px;
+  align-items: center;
+}
+#card1>.cards{
+      width: 20%;
+      height: 96%;
+      border: 1px solid black;
+      border-radius: 10px;
+      background-size: contain;
+}
+
+
+
+#poster4{
+  width: 100%;
+  height: 1300px;
+  /* border: 1px solid black; */
+  display: flex;
+  background-image: url(https://plus.unsplash.com/premium_photo-1674048381806-814bb2126f73?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2hpdGUlMjBicmlja3xlbnwwfHwwfHx8MA%3D%3D);
+  background-size: cover;
+}
+#poster4>div{
+  width: 50%;
+  height: 100%;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}
+#poster4>div>div{
+  border-radius: 20px;
+}
+#poster4>#left>div{
+    width: 71%;
+    height: 45%;
+    /* border: 1px solid black; */
+    margin-left: 150px;
+    margin-bottom: 30px;
+}
+#poster4>#right>#top{
+  width: 71%;
+  height: 45%;
+  /* border: 1px solid black; */
+  margin-left: 50px;
+  margin-top: 50px;
+  background-image: url(https://images.ctfassets.net/pmzhtobns06n/5tZqcteYF02OSW5rObw0IV/591df311a817bea7b5a4823ec3d1a469/GLOBAL_CROSS_LINKS_-_DESKTOP_-_200_YEARS.png?fm=webp&q=80&fm=webp&q=80);
+  background-size: cover;
+}
+#poster4>#right>#bottom{
+  width: 71%;
+  height: 45%;
+  /* border: 1px solid black; */
+  margin-left: 50px;
+  background-image: url(https://images.ctfassets.net/pmzhtobns06n/7Ei3T73AqiLE7o7UbiJnz3/dc791e12658a547b6c41cfb5104e3c18/Background_images_desk.jpg?fm=webp&q=80&fm=webp&q=80);
+  background-size: cover;
+}
+#poster5{
+  width: 100%;
+  height: 500px;
+  /* border: 1px solid black; */
+}
+
+
+
+
   /* Responsivenes */
   /* for img card in new creation */
   @media (min-width: 768px) {
