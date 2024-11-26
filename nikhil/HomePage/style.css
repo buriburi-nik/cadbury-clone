@@ -280,7 +280,7 @@ header {
     position: absolute; /* Positions tag in top-left corner */
     top: 10px;
     left: 10px;
-    background-color: #F1CD76;
+    background: linear-gradient(to right, #d4af37, #f3e5ab, #d4af37, #f3e5ab);
     color: #45297c;
     font-size: 10px;
     font-weight: 600;
@@ -318,10 +318,12 @@ header {
 
 .navigation{
     display: flex;
+    position: relative;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 15px;
     margin-top: 20px;
+    padding-right: 100px;
 }
 
 .nav-btn {
@@ -462,6 +464,7 @@ header {
 .card2 {
   background-image: url("./src/Animate/2-anima.webp");
   margin-top: 90px;
+
 }
 
 .card3 {
@@ -831,12 +834,12 @@ header {
     /* border: 1px solid red; */
 }
 #poster1>#img{
-
-background-image: url("./src/poster/p1\(1\).webp");  background-size: contain;
+background-image: url("./src/poster/p1\(1\).webp"); background-repeat: no-repeat;
+ background-size: cover;
 }
 #poster1>#img1{
 background-image: url("./src/poster/p1\(2\).webp");
-  background-size: contain;
+  background-size: cover;
 }
 
 #poster2{
