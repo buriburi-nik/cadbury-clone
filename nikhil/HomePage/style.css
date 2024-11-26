@@ -129,26 +129,38 @@ header {
 }
 
 .hero-button {
-    display: inline-block;
-    height: 48px;
-    width: 14rem;
-    background: linear-gradient(to right, #f8e8ab, #eed390);
-    color: #45297c;
-    text-decoration: none;
-    padding: 10px 24px;
-    font-size: 1.5 rem; /* Corrected font-size */
-    font-weight: bold;
-    border-radius: 40px;
-    text-transform: uppercase;
-    text-align: center; 
-    line-height: 2rem; 
-    transition: background-color 0.3s ease;
-    margin: 0 auto; 
-    
+  display: flex; 
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center; 
+  background: linear-gradient(to right, #d4af37, #f3e5ab, #d4af37, #f3e5ab);
+  color: #4a0982;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 20px;
+  transition: background-position 0.7s ease, transform 0.2s;
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  box-sizing: border-box; 
 }
 
 .hero-button:hover {
-    background: linear-gradient(to right, #eed390, #f8e8ab);
+  background: linear-gradient(to right, #eed390, #f8e8ab);
+  cursor: pointer;
+  background-position: left;
+}
+
+.hero-button--small {
+  text-transform: uppercase;
+  width: 240px;
+  height: 48px;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
 }
 
 /* main  */
@@ -204,19 +216,37 @@ header {
 }
 
 /* backgroung img of cards */
-.imgCard {
-    background: url('./src/homepage/bg\ card.png') no-repeat center;
-    background-size: cover; /* Ensures the background fills the section */
-    padding: 50px 0;
-    position: relative;
+.imgCardn {
+  width: 296px;
+  height: 296px;
+  flex: 0 0 300px;
+  position: relative; 
+  max-width: 320px;
+  background-color: #e5ecda;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scroll-snap-align: center;
   }
 
+.imgCard{
+  width: 300px;
+    height: 350px;
+    background: url('./src/homepage/bg\ card.png') no-repeat center;
+    background-size: cover; 
+    padding: 50px 0;
+    position: relative;  
+}
 /* Individual Image Card */
 .imgCard {
     flex: 0 0 300px;
     position: relative; 
-    width: 300px;
-    height: 350px;
     max-width: 320px;
     background-color: #E4DAEC;
     border-radius: 20px;
@@ -233,9 +263,17 @@ header {
 
 /* Hover Effect */
 .imgCard:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 30px rgba(11, 11, 11, 0.15);
+     transform: scale(1.05); 
+    transition: transform 0.3s ease; 
 }
+
+.imgCardn:hover  {
+  box-shadow: 0 8px 30px rgba(11, 11, 11, 0.15);
+   transform: scale(1.05); 
+  transition: transform 0.3s ease; 
+}
+
 
 /* Tag Style */
 .tagstyle {
@@ -332,6 +370,181 @@ header {
     color: #45297c;
     font-weight: bold;
 }
+
+/*----------------------cadbury section k phele -------------*/
+.animated-cards {
+  margin-top: 100px;
+  background-image: url("./src/poster/home-bg2.jpg");
+  padding: 0%;
+  backface-visibility: calc(20%);
+  justify-content: center;
+  background-size: contain;
+
+}
+
+.animated-cards h1 {
+  text-align: center;
+  font-size: 52px;
+  color: white;
+  margin: auto;
+}
+
+.anim-main {
+  justify-content: center;
+  /* margin: 70px 20px; */
+}
+
+.anim-main #top {
+  display: flex;
+  place-content: center;
+  position: relative;
+  top: -120px;
+}
+
+.anim-main #bottom {
+  display: flex;
+  place-content: center;
+  position: relative;
+  top: -120px;
+}
+
+.card {
+  width: 530px;
+  height: 610px;
+  border-radius: 15px;
+  margin: 30px;
+  /* margin-bottom: 0%; */
+  box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.3);
+  animation: slideInUp;
+  animation-duration: 2s;
+}
+
+/* Card hover effect */
+.card1,
+.card2,
+.card3,
+.card4 {
+  background-size: 110%;
+  background-position: center;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  transition: background-size 0.5s ease-in-out;
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover,
+.card4:hover {
+  background-size: 130%;
+  cursor: pointer;
+}
+
+.animationSlideInOut {
+  animation: slideInOut 1.5s ease-out forwards;
+}
+
+@keyframes slideInOut {
+  0% {
+    transform: translateY(160px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.card1 {
+  background-image: url("./src/Animate/1-anima.webp");
+}
+
+.card2 {
+  background-image: url("./src/Animate/2-anima.webp");
+  margin-top: 90px;
+}
+
+.card3 {
+  background-image: url("./src/Animate/3-anima.webp");
+  margin-top: 10px;
+}
+
+.card4 {
+  background-image: url("./src/Animate/4-anima.webp");
+  margin-top: 90px;
+}
+
+.anim-text {
+  text-align: center;
+  /* padding: 10px 15px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 2%;
+  
+}
+
+.recipesSpan {
+  color: white;
+  font-size: 24px;
+  padding: 2px 0;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  letter-spacing: 0.1ch;
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+.anim-text h2 {
+  font-size: 34px;
+  letter-spacing: 0.01ch;
+  color: #d1a752;
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+.anim-text p {
+  font-size: 16px;
+  color: white;
+  font-family: "Franklin Gothic";
+  letter-spacing: 0.01ch;
+  margin: 10px;
+}
+
+.golden {
+  font-weight: bold;
+  text-wrap-mode:wrap;
+  height: 48px;
+  width: 240px;
+  padding: 10px 16px;
+  font-size: 18px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  color: #4a0982;
+  background: linear-gradient(to right, #d4af37, #f3e5ab, #d4af37, #f3e5ab);
+  transition: background-position 0.7s ease, transform 0.2s;
+  background-position: right;
+  letter-spacing: 0.2ch;
+}
+
+.golden:hover {
+  cursor: pointer;
+  background-position: left;
+}
+
+.anim {
+  margin: auto;
+  width: 240px;
+  align-items: center;
+}
+
 /*----------------------- Cadbury story----------------------------- */
 
 .cadbury-stories {
@@ -389,7 +602,7 @@ header {
   
   .image:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   }
   
   /* Unique image positioning for staggered effect */
@@ -518,6 +731,7 @@ header {
 .imgCard-link-end:hover .imgCard-end {
     transform: scale(1.05); 
     transition: transform 0.3s ease; 
+    
 }
 
 
@@ -617,55 +831,106 @@ header {
     /* border: 1px solid red; */
 }
 #poster1>#img{
-    background-image: url("https://images.ctfassets.net/pmzhtobns06n/3SKSFYVQOisuTtQ3cFYnnK/21d58b2d361ddd319377b89d09234539/Advent_Image_Destop_X2__2_.png?fm=webp&q=80&fm=webp&q=80");
-    background-size: contain;
+
+background-image: url("./src/poster/p1\(1\).webp");  background-size: contain;
 }
 #poster1>#img1{
-    background-image: url("https://images.ctfassets.net/pmzhtobns06n/2no6KljpAOFVYUj4wB79mA/b3be2908e2774ff28519ddeede8d18d2/CGD-Basket_gift-1440x1200.jpg?fm=webp&q=80&fm=webp&q=80");
-    background-size: contain;
+background-image: url("./src/poster/p1\(2\).webp");
+  background-size: contain;
 }
 
 #poster2{
   width: 100%;
   height: 600px;
-  background-image: url("https://images.ctfassets.net/pmzhtobns06n/4AXdo20zKJPIjnhtHt4ND0/e9d45c3aff03218c270bc5c88b89401a/Desktop_UK_Landing_Page.jpg?fm=webp&q=80");
+  background-image: url("./src/poster/p2.webp"); 
   background-size: cover;
   background-repeat: no-repeats;
   justify-items: center;
-
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
 }
 
-#poster3{
+#poster2 .anim-text {
+  text-align: center; /* Center text horizontally */
+  max-width: 800px; /* Optional max-width for better readability */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center content inside the container */
+  align-items: center; /* Horizontally center content inside */
+}
+
+#poster2 h2 {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0 0 20px;
+}
+
+#poster2 p {
+  font-size: 18px;
+  margin: 0 0 30px;
+}
+
+/* --------------------poster 3----------------- */
+
+
+#poster3 {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
   width: 100%;
   height: 400px;
   background-color: #4b0984;
 }
 
+#poster3 .anim-text {
+  text-align: center; 
+  max-width: 800px; 
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+#poster3 h2 {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0 0 20px;
+}
+
+#poster3 p {
+  font-size: 18px;
+  margin: 0 0 30px;
+}
+/* --------------------video---------------------------- */
 #videoPoster{
   width: 100%;
 }
 
-#title{
-  width: 100%;
-  height: 160px;
-  /* border: 1px solid black; */
+#title {
   display: flex;
-  flex-direction: column;
-  justify-content:end;
-  align-items: center;
-  line-height:0.5;
+  flex-direction: column; /* Align text vertically */
+  justify-content: center; /* Centers content vertically */
+  align-items: center; /* Centers content horizontally */
+  text-align: center; /* Centers text */
+  height: 100vh; /* Makes the div take the full height of the viewport */
+  color: rgb(240, 15, 15); /* Makes the text white for better visibility */
+  padding: 20px;
+  box-sizing: border-box;
 }
-#title>#head{
-  font-size: 52px;
-  font-family: sans-serif;
-  font-weight:700;
-  line-height: 48px;
-  color: rgb(75, 9, 131);
-  line-height: 0.1;
+
+#title p {
+  margin: 10px 0; /* Adds spacing between paragraphs */
+  font-size: 24px; /* Adjust font size as needed */
 }
-#title>p{
-  margin-top: 5px;
+
+#head {
+  font-size: 36px; /* Larger font size for the main heading */
+  font-weight: bold;
 }
+
 
 #card1{
   width: 100%;
@@ -691,7 +956,7 @@ header {
   height: 1300px;
   /* border: 1px solid black; */
   display: flex;
-  background-image: url(https://plus.unsplash.com/premium_photo-1674048381806-814bb2126f73?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2hpdGUlMjBicmlja3xlbnwwfHwwfHx8MA%3D%3D);
+  background-image: url(./src/poster/p4BG.jpeg);
   background-size: cover;
 }
 #poster4>div{
@@ -703,33 +968,7 @@ header {
   justify-content: center;
   gap: 50px;
 }
-#poster4>div>div{
-  border-radius: 20px;
-}
-#poster4>#left>div{
-    width: 71%;
-    height: 45%;
-    /* border: 1px solid black; */
-    margin-left: 150px;
-    margin-bottom: 30px;
-}
-#poster4>#right>#top{
-  width: 71%;
-  height: 45%;
-  /* border: 1px solid black; */
-  margin-left: 50px;
-  margin-top: 50px;
-  background-image: url(https://images.ctfassets.net/pmzhtobns06n/5tZqcteYF02OSW5rObw0IV/591df311a817bea7b5a4823ec3d1a469/GLOBAL_CROSS_LINKS_-_DESKTOP_-_200_YEARS.png?fm=webp&q=80&fm=webp&q=80);
-  background-size: cover;
-}
-#poster4>#right>#bottom{
-  width: 71%;
-  height: 45%;
-  /* border: 1px solid black; */
-  margin-left: 50px;
-  background-image: url(https://images.ctfassets.net/pmzhtobns06n/7Ei3T73AqiLE7o7UbiJnz3/dc791e12658a547b6c41cfb5104e3c18/Background_images_desk.jpg?fm=webp&q=80&fm=webp&q=80);
-  background-size: cover;
-}
+
 #poster5{
   width: 100%;
   height: 500px;
