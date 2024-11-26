@@ -1,0 +1,752 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.disclaimer {
+  height: 30px;
+  width: 100%;
+  padding: 5px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-family: gibson, Arial;
+  line-height: 20px;
+  color: white;
+  letter-spacing: 0.3px;
+  background-color: #4a0982;
+}
+header {
+  height: 97px;
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 107px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* position: relative; */
+  font-size: 14px;
+  font-family: gibson, Arial;
+  font-weight: 400;
+  line-height: 20px;
+  background-color: #4a0982;
+  color: white;
+}
+
+.logo {
+  width: 290px;
+  height: 65.3839px;
+  /* position: relative; */
+  font-size: 14px;
+  font-family: gibson, Arial;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgb(75, 9, 131);
+}
+.mini-search {
+  width: 491px;
+  height: 30px;
+  padding: 0px 85px 0px 42px;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 400;
+}
+.mini-search input {
+  width: 362px;
+  height: 30px;
+  padding: 1px 2px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 20px;
+  color: white;
+  letter-spacing: 1px;
+  background-color: #4a0982;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+}
+.mini-search span {
+  border-bottom: 1px solid white;
+}
+.mini-search span:hover {
+  cursor: pointer;
+}
+.mini-search input::placeholder {
+  color: white;
+}
+.header-icons {
+  color: white;
+  font-size: 25px;
+  margin-right: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-icons i {
+  margin: 0 30px;
+}
+.header-icons i:hover {
+  cursor: pointer;
+}
+
+/* Navbar Section */
+
+.nav {
+  background-color: #4a0982;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.menu-container {
+  width: 100%;
+  height: 65px;
+}
+
+.menu-container ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 0 80px;
+}
+
+.menu-container li {
+  list-style: none;
+  color: white;
+  padding: 10px;
+  position: relative;
+  font-size: 16px;
+  letter-spacing: 0.01ch;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu-container li:hover {
+  cursor: pointer;
+  color: #d6b05c;
+}
+
+/* Dropdown Menu */
+.menu-container li ul {
+  display: none;
+  position: absolute;
+  background-color: #4a0982;
+  padding: 10px 0;
+  margin: 0;
+  list-style: none;
+  border-radius: 4px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.menu-container li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu-container li ul li {
+  padding: 10px 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.menu-container li ul li:hover {
+  color: #d6b05c;
+}
+
+/* Hero Section */
+
+.hero {
+  display: flex;
+}
+.hero-text {
+  width: 723px;
+  height: 532px;
+  background: url(assets/hero1.webp);
+  background-size: cover;
+  text-align: center;
+  padding: 30px;
+  /* padding: 50px; */
+}
+.hero-text div {
+  margin-left: 188px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.hero-text h2 {
+  font-size: 70px;
+  padding: 0 25px;
+  color: #d6b05c;
+  text-align: center;
+}
+.hero-text p {
+  font-size: 16px;
+  margin: 30px 0;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.golden {
+  height: 48px;
+  width: 277px;
+  padding: 20px 16px;
+
+  font-size: 18px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  color: #4a0982;
+
+  background: linear-gradient(to right, #f1cd76, #ffecb2, #d0a651, #ffecb2);
+  transition: background-position 0.7s ease, transform 0.2s;
+  background-position: left;
+  letter-spacing: 0.2ch;
+  background-size: 200%;
+}
+
+.golden:hover {
+  cursor: pointer;
+  background-position: right;
+}
+
+.hero-img2 {
+  width: 723px;
+  height: 532px;
+  /* object-fit: cover; */
+}
+.hero2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4a0982;
+}
+.hero2 figure {
+  width: 723px;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  background-color: #4a0982;
+}
+.hero2 figure img {
+  padding: 20px 0;
+}
+.hero2text {
+  width: 50vw;
+}
+.hero2text div {
+  margin: 50px 239px 50px 64px;
+  color: white;
+}
+.hero2text div h2 {
+  font-size: 52px;
+  margin: 22px 0;
+}
+.hero2text div p {
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 8px 0;
+}
+
+/* CARD SLIDER 1 */
+.card-slider1 {
+  padding: 20px 0px 40px 0px;
+}
+.slider1-head {
+  margin: 30px 0px 30px 0px;
+  display: flex;
+}
+#slider1-start {
+  display: flex;
+  justify-content: end;
+  width: 434px;
+  height: 138px;
+}
+#slider1-mid {
+  width: 579px;
+  height: 158px;
+  text-align: center;
+
+  & > h1 {
+    font-size: 52px;
+    color: #4a0982;
+    letter-spacing: 0.01ch;
+  }
+
+  & > p {
+    padding: 10px 30px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+}
+
+.slider1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  flex-wrap: nowrap;
+  scroll-behavior: smooth;
+  scrollbar-color: #4a0982 #fff;
+  padding: 20px 0;
+}
+#slider-1-card {
+  width: 226px;
+  height: 312px;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 22px;
+  border-radius: 15px;
+  box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+
+  & > img {
+    margin-bottom: 26px;
+  }
+}
+
+#slider-1-card:hover {
+  transform: scale(1.05);
+  box-shadow: 6px 12px 30px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+#prod_details {
+  padding: 0 12px;
+  text-align: center;
+
+  & > p {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.1ch;
+    font-weight: 500;
+  }
+}
+
+#edited {
+  display: flex;
+  margin: auto;
+}
+#sale {
+  color: #757575;
+  text-decoration: line-through;
+}
+.sale-price {
+  font-size: 20px;
+  color: #d61a49;
+  margin-right: 20px;
+}
+.orig-price {
+  font-size: 20px;
+  color: #4a0982;
+}
+
+/* GIFTS SECTION (6) */
+
+.section6-gits {
+  padding: 20px 0px 40px 0px;
+}
+
+.slider2-head {
+  margin: 30px 0px 30px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#slider2-mid {
+  width: 579px;
+  height: 158px;
+  text-align: center;
+
+  & > h1 {
+    font-size: 52px;
+    color: #4a0982;
+    letter-spacing: 0.03ch;
+  }
+}
+
+.slider2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  flex-wrap: nowrap;
+  scroll-behavior: smooth;
+  scrollbar-color: #4a0982 #fff;
+  padding: 20px 0;
+}
+
+.slider-2-card {
+  flex: 0 0 auto;
+  width: 226px;
+  height: 312px;
+  margin: 0 10px;
+  border-radius: 15px;
+  box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.slider-2-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.slider-2-card:hover {
+  transform: scale(1.05);
+  box-shadow: 6px 12px 30px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+/* CHRISTMAS HAMPERS SECTION (7) */
+
+.section7-hampers {
+  padding: 20px 0px 0px 0px;
+}
+
+/* CADBURY BRANDS SECTION (8) */
+
+.section8-gifts {
+  padding: 20px 0px 40px 0px;
+}
+
+.slider4-head {
+  margin: 30px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#slider4-mid {
+  /* width: 579px; */
+  /* height: 158px; */
+  text-align: center;
+  display: flex;
+  margin-left: 15vw;
+
+  & > h1 {
+    font-size: 52px;
+    color: #4a0982;
+    letter-spacing: 0.03ch;
+    width: 600px;
+  }
+}
+.slider4 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  flex-wrap: nowrap;
+  scroll-behavior: smooth;
+  scrollbar-color: #4a0982 #fff;
+  padding: 20px 0;
+}
+
+.slider-4-card {
+  flex: 0 0 auto;
+  width: 226px;
+  height: 226px;
+  margin: 0 10px;
+  border-radius: 15px;
+  box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.slider-4-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.slider-4-card:hover {
+  transform: scale(1.05);
+  box-shadow: 6px 12px 30px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+/* INSPIRATION SECTION (9) */
+
+.section9-insp {
+  padding: 20px 0px 40px 0px;
+}
+
+.inspiration {
+  width: 100%;
+  display: flex;
+}
+.insp-text {
+  width: 50%;
+  background-color: #4a0982;
+  padding: 24px 64px 24px 238px;
+}
+.inspiration img {
+  width: 50%;
+}
+.inspiration img:hover {
+  cursor: pointer;
+}
+
+.inspiration span {
+  color: #f1cd76;
+  font-size: 26px;
+  padding: 2px 0;
+  border-top: 2px solid gold;
+  border-bottom: 2px solid gold;
+  letter-spacing: 0.1ch;
+}
+.inspiration h2 {
+  font-size: 52px;
+  color: white;
+  margin: 22px 0;
+  padding-right: 20px;
+}
+.inspiration p {
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  margin-bottom: 32px;
+}
+
+/* BEST SELLING SECTION (10) */
+
+.section10-bestSell {
+  padding: 20px 0px 40px 0px;
+}
+
+/* ANIMATED CARDS SECTION (11) */
+
+.animated-cards h1 {
+  margin: auto;
+  text-align: center;
+  font-size: 52px;
+  color: white;
+}
+.anim-main {
+  display: flex;
+  justify-content: center;
+  margin: 0px 20px;
+}
+
+.card {
+  width: 585px;
+  height: 631px;
+  border-radius: 15px;
+  margin: 30px;
+  box-shadow: 6px 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.card1 {
+  background: url("assets/animated1.webp");
+  background-size: 110%;
+  background-position: center;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  padding: 20px 40px;
+  transition: background-size 0.5s ease-in-out;
+}
+.card1:hover {
+  background-size: 130%;
+  cursor: pointer;
+}
+
+.card2 {
+  background-image: url("assets/animated2.webp");
+  background-size: 110%;
+  background-position: center;
+  margin-top: 90px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  padding: 20px 40px;
+  transition: background-size 0.5s ease-in-out;
+}
+.card2:hover {
+  background-size: 130%;
+  cursor: pointer;
+}
+
+.anim-text {
+  text-align: center;
+  padding: 10px 15px;
+}
+.anim-text span {
+  color: #f1cd76;
+  font-size: 18px;
+  padding: 2px 0;
+  border-top: 2px solid gold;
+  border-bottom: 2px solid gold;
+  letter-spacing: 0.1ch;
+}
+.anim-text h2 {
+  font-size: 34px;
+  letter-spacing: 0.01ch;
+  color: white;
+  margin: 10px;
+}
+.anim-text p {
+  font-size: 16px;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 0.01ch;
+  margin: 10px;
+}
+.anim {
+  margin: auto;
+  width: 240px;
+}
+
+.card {
+  animation: zoomInUp;
+  animation-duration: 2.5s;
+}
+
+/* SIGN UP SECTION (12) */
+
+.section12-signUp {
+  padding: 20px 0px 40px 0px;
+}
+.signup {
+  width: 100%;
+  display: flex;
+  background-color: #4a0982;
+  padding: 40px 0;
+}
+.signup-main {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.signup-text {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  & > h2 {
+    font-size: 36px;
+    color: #f1cd76;
+    letter-spacing: 0.05ch;
+  }
+
+  & > p {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 14px;
+    color: #fff;
+    padding: 22px 0 30px;
+  }
+}
+
+/* MILK GIF */
+
+.gif {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #4a0982;
+}
+
+/* FOOTER */
+
+.upper {
+  width: 1232px;
+  height: 329px;
+  margin: 0 107px 0 107px;
+  border-bottom: 1px solid #4a0982;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+#font {
+  & > h2 {
+    font-size: 14.5px;
+    color: #4a0982;
+    letter-spacing: 0.1ch;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+
+  & > p {
+    font-size: 14px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    line-height: 2;
+  }
+
+  & > a {
+    font-size: 14px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    text-decoration: none;
+    color: black;
+    line-height: 2;
+  }
+
+  & > a:hover {
+    color: #4a0982;
+  }
+}
+
+.table {
+  width: 383px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & > p {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 14px;
+    line-height: 2;
+  }
+}
+
+.lower {
+  width: 1232px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.lower img {
+  margin: 10px 0;
+}
+.lower p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 14px;
+  line-height: 2;
+}
