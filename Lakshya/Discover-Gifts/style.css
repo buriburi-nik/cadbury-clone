@@ -1,14 +1,14 @@
+/* Base Styles */
 * {
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 /* HERO SECTION */
-
 .gifts-hero {
-  height: 520px;
+  height: auto;
   width: 100%;
   background-image: url("assets/Hero-BG.webp");
   background-size: cover;
@@ -20,6 +20,7 @@
   flex-direction: column;
   padding-top: 100px;
 }
+
 .gifts-hero h1 {
   font-size: 72px;
   color: #d1a856;
@@ -27,11 +28,13 @@
   animation: fadeInUp;
   animation-duration: 2s;
 }
+
 .hero-head {
   text-align: center;
   margin: 0 100px;
-  width: 900px;
+  width: auto;
 }
+
 .gifts-hero p {
   color: white;
   font-size: 24px;
@@ -39,6 +42,7 @@
   animation: fadeInUp;
   animation-duration: 3s;
 }
+
 .golden {
   height: 48px;
   width: 333px;
@@ -57,6 +61,7 @@
   letter-spacing: 0.2ch;
   background-size: 200%;
 }
+
 .gifts-hero button {
   animation: fadeInUp;
   animation-duration: 4s;
@@ -67,10 +72,120 @@
   background-position: left;
 }
 
+/* Media Queries */
+
+/* Mobile (0px - 583px) */
+@media (max-width: 583px) {
+  .gifts-hero {
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+
+  .gifts-hero h1 {
+    font-size: 28px;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .hero-head {
+    margin: 0 20px;
+    width: auto;
+  }
+
+  .gifts-hero p {
+    font-size: 16px;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .golden {
+    width: 90%;
+    font-size: 16px;
+    margin: 20px auto;
+  }
+}
+
+/* Tablets (584px - 933px) */
+@media (min-width: 584px) and (max-width: 933px) {
+  .gifts-hero {
+    height: 450px;
+    padding-top: 80px;
+  }
+
+  .gifts-hero h1 {
+    font-size: 45px;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .hero-head {
+    margin: 0 40px;
+    width: auto;
+  }
+
+  .gifts-hero p {
+    font-size: 18px;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .golden {
+    width: 80%;
+    font-size: 16px;
+    margin: 20px auto;
+  }
+  .second-mid .sub-sec h1, .second-mid .sub-sec p
+  {
+    text-align: center;
+  }
+}
+
+/* Desktops (934px and above) */
+@media (min-width: 934px) {
+  .gifts-hero {
+    height: 520px;
+    padding-top: 100px;
+  }
+
+  .gifts-hero h1 {
+    font-size: 72px;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .hero-head {
+    margin: 0 100px;
+    width: 900px;
+  }
+
+  .gifts-hero p {
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .golden {
+    width: 333px;
+    font-size: 18px;
+    margin: 50px 15px;
+  }
+}
+
+
+
 /* MID SECTION */
 
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* Second Section Header */
 .second-head {
-  /* height: 288px; */
   width: 100%;
   text-align: center;
   margin: auto;
@@ -80,11 +195,13 @@
   flex-direction: column;
   color: #4a0982;
 }
+
 .head-text {
   font-size: 52px;
   width: 525px;
   margin: 50px;
 }
+
 .head-para {
   font-size: 16px;
   width: 525px;
@@ -95,26 +212,31 @@
 
 /* Section 2 Mid */
 .second-mid {
-  width: 1232px;
+  width: 100%;
+  max-width: 1232px;
   height: 592px;
   margin: auto;
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: flex-end;
 }
+
 .sub-sec {
   margin: 100px 0;
 }
+
 .sub-sec h1 {
   font-size: 34px;
   color: #4a0982;
   margin: 10px 70px;
 }
+
 .sub-sec p {
   font-size: 16px;
   font-family: "Franklin Gothic";
   margin: 10px 70px;
 }
+
 .purple-button {
   height: 48px;
   width: 240px;
@@ -138,17 +260,18 @@
 }
 
 /* Cards Section */
-
 .cards-head {
   margin: auto;
   text-align: center;
   width: 1000px;
   padding: 50px 120px;
 }
+
 .cards-head h1 {
   font-size: 52px;
   color: #4a0982;
 }
+
 .cards-head p {
   font-size: 16px;
   font-family: "Franklin Gothic";
@@ -160,7 +283,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
+
 #card {
   height: 342px;
   margin: 10px;
@@ -170,11 +295,13 @@
   transition: transform 0.5s ease, box-shadow 0.3s ease;
   overflow: hidden;
 }
+
 #card:hover {
   transform: scale(1.05);
   box-shadow: 6px 12px 30px rgba(0, 0, 0, 0.4);
   cursor: pointer;
 }
+
 #card div {
   display: flex;
   height: 120px;
@@ -182,22 +309,27 @@
   justify-content: center;
   object-fit: cover;
 }
+
 #card h1 {
   text-align: center;
   font-size: 19px;
   color: white;
 }
+
+/* Animated Cards */
 .animated-cards {
   margin-top: 100px;
   background-color: #4a0982;
   padding: 50px 0;
 }
+
 .animated-cards h1 {
   margin: auto;
   text-align: center;
   font-size: 52px;
   color: white;
 }
+
 .anim-main {
   display: flex;
   justify-content: center;
@@ -222,6 +354,7 @@
   padding: 20px 40px;
   transition: background-size 0.5s ease-in-out;
 }
+
 .card1:hover {
   background-size: 130%;
   cursor: pointer;
@@ -238,6 +371,7 @@
   padding: 20px 40px;
   transition: background-size 0.5s ease-in-out;
 }
+
 .card2:hover {
   background-size: 130%;
   cursor: pointer;
@@ -247,6 +381,7 @@
   text-align: center;
   padding: 10px 15px;
 }
+
 .recipesSpan {
   color: white;
   font-size: 24px;
@@ -256,12 +391,14 @@
   letter-spacing: 0.1ch;
   margin: 10px;
 }
+
 .anim-text h2 {
   font-size: 34px;
   letter-spacing: 0.01ch;
   color: #d1a752;
   margin: 10px;
 }
+
 .anim-text p {
   font-size: 16px;
   color: white;
@@ -269,12 +406,623 @@
   letter-spacing: 0.01ch;
   margin: 10px;
 }
+
 .anim {
   margin: auto;
   width: 240px;
-}
 
-.card {
+  /* Animation */
   animation: slideInUp;
   animation-duration: 2s;
+}
+
+/* Responsive Adjustments */
+
+/* Mobile (0px - 583px) */
+@media (max-width: 583px) {
+  .second-head {
+    padding: 20px;
+  }
+
+  .head-text {
+    font-size: 32px;
+    width: 90%;
+    margin: 20px;
+  }
+
+  .head-para {
+    font-size: 14px;
+    width: 90%;
+  }
+
+  .second-mid {
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    padding: 20px;
+    width: 100%;
+  }
+  .second-mid img
+  {
+    width: 100%;
+  }
+
+  .sub-sec {
+    margin: 40px 0;
+  }
+
+  .sub-sec h1 {
+    font-size: 28px;
+    margin: 10px 20px;
+  }
+
+  .sub-sec p {
+    font-size: 14px;
+    margin: 10px 20px;
+  }
+
+  .purple-button {
+    width: 80%;
+    font-size: 16px;
+    margin: 20px auto;
+  }
+
+  .cards-head {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .cards-head h1 {
+    font-size: 32px;
+  }
+
+  .cards-head p {
+    font-size: 14px;
+    padding: 0 20px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    margin: 10px 0;
+    height: auto;
+  }
+
+  .anim-main {
+    flex-direction: column;
+    margin: 20px 0;
+    margin-left: 75px;
+  }
+
+  .card {
+    width: 80%;
+    margin: 20px 0;
+    height: auto;
+  }
+}
+
+/* Tablets (584px - 933px) */
+@media (min-width: 584px) and (max-width: 933px) {
+  .second-head {
+    padding: 30px;
+  }
+
+  .head-text {
+    font-size: 40px;
+    width: 90%;
+  }
+
+  .head-para {
+    font-size: 16px;
+    width: 90%;
+  }
+
+  .second-mid {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+  .anim-main{
+    margin-left: 50px;
+  }
+  .second-mid img
+  {
+    width: 100vw;
+  }
+  .sub-sec h1 {
+    font-size: 30px;
+    margin: 10px 30px;
+  }
+
+  .sub-sec p {
+    font-size: 16px;
+    margin: 10px 30px;
+  }
+
+  .purple-button {
+    width: 80%;
+    font-size: 16px;
+  }
+
+  .cards-head {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .cards-head h1 {
+    font-size: 40px;
+  }
+
+  .cards-head p {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+    margin: 20px 0;
+  }
+
+  .anim-main {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 90%;
+    margin: 20px 0;
+    height: auto;
+  }
+}
+
+/* Desktops (934px and above) */
+@media (min-width: 934px) {
+  .second-head {
+    padding: 50px;
+  }
+
+  .head-text {
+    font-size: 52px;
+    width: 525px;
+    margin: 50px;
+  }
+
+  .head-para {
+    font-size: 16px;
+    width: 525px;
+  }
+
+  .second-mid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .sub-sec h1 {
+    font-size: 34px;
+  }
+
+  .sub-sec p {
+    font-size: 16px;
+  }
+
+  .purple-button {
+    width: 240px;
+  }
+
+  .cards-head {
+    width: 1000px;
+    padding: 50px 120px;
+  }
+
+  .cards-head h1 {
+    font-size: 52px;
+  }
+
+  .cards-head p {
+    font-size: 16px;
+    padding: 10px 150px;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 530px;
+    margin: 30px;
+    height: 610px;
+  }
+
+  .anim-main {
+    display: flex;
+    justify-content: center;
+    margin: 70px 20px;
+  }
+
+  .card {
+    width: 530px;
+    height: 610px;
+    margin: 30px;
+  }
+}
+/* For screen width between 933px and 1027px */
+@media (min-width: 933px) and (max-width: 1027px) {
+  /* Section Header */
+  .second-head {
+    padding: 40px;
+  }
+
+  .head-text {
+    font-size: 48px;  /* Slightly smaller than desktop */
+    width: 90%;
+  }
+
+  .head-para {
+    font-size: 16px;
+    width: 90%;
+  }
+
+  /* Second Mid Section */
+  .second-mid {
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+  }
+
+  .sub-sec {
+    margin: 60px 0;
+  }
+
+  .sub-sec h1 {
+    font-size: 30px;
+    margin: 10px 40px;
+  }
+
+  .sub-sec p {
+    font-size: 16px;
+    margin: 10px 40px;
+  }
+
+  .purple-button {
+    width: 240px;
+    font-size: 16px;
+    margin: 20px auto;
+  }
+
+  /* Cards Section */
+  .cards-head {
+    width: 100%;
+    padding: 20px 80px;
+  }
+
+  .cards-head h1 {
+    font-size: 48px;
+  }
+
+  .cards-head p {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+
+  /* Cards */
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  #card {
+    width: 280px;  /* Smaller width than larger screens */
+    height: 300px;
+    margin: 10px;
+    background-color: #4a0982;
+    box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+  }
+
+  #card:hover {
+    transform: scale(1.05);
+    box-shadow: 6px 12px 30px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
+
+  #card div {
+    display: flex;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+  }
+
+  #card h1 {
+    text-align: center;
+    font-size: 19px;
+    color: white;
+  }
+
+  /* Animated Cards Section */
+  .animated-cards {
+    margin-top: 80px;
+    background-color: #4a0982;
+    padding: 40px 0;
+  }
+
+  .animated-cards h1 {
+    margin: auto;
+    text-align: center;
+    font-size: 48px;
+    color: white;
+  }
+
+  .anim-main {
+    display: flex;
+    justify-content: center;
+    margin: 60px 20px;
+  }
+
+  .card {
+    width: 430px;
+    height: 510px;
+    margin: 20px;
+    box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .card1, .card2 {
+    background-size: 110%;
+    background-position: center;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding: 20px 40px;
+    transition: background-size 0.5s ease-in-out;
+  }
+
+  .card1:hover, .card2:hover {
+    background-size: 130%;
+    cursor: pointer;
+  }
+
+  .anim-text {
+    text-align: center;
+    padding: 10px 15px;
+  }
+
+  .recipesSpan {
+    color: white;
+    font-size: 24px;
+    padding: 2px 0;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    letter-spacing: 0.1ch;
+    margin: 10px;
+  }
+
+  .anim-text h2 {
+    font-size: 30px;
+    letter-spacing: 0.01ch;
+    color: #d1a752;
+    margin: 10px;
+  }
+
+  .anim-text p {
+    font-size: 16px;
+    color: white;
+    font-family: "Franklin Gothic";
+    letter-spacing: 0.01ch;
+    margin: 10px;
+  }
+
+  .anim {
+    margin: auto;
+    width: 240px;
+  }
+
+  .card {
+    animation: slideInUp;
+    animation-duration: 2s;
+  }
+}
+/* For screen width between 0px and 305px */
+/* For screen width below 305px */
+/* For screen width below 305px */
+@media (max-width: 305px) {
+
+  /* Section Header */
+  .second-head {
+    padding: 5px;
+    text-align: center;
+  }
+
+  .head-text {
+    font-size: 14px;  /* Reduced font size */
+    width: 90%;
+    margin: 5px 0;
+  }
+
+  .head-para {
+    font-size: 8px;  /* Reduced font size */
+    width: 90%;
+    margin-top: 5px;
+    letter-spacing: 0.5px;
+  }
+
+  /* Second Mid Section */
+  .second-mid {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 5px;
+  }
+
+  .sub-sec {
+    margin: 10px 0;
+    width: 90%;
+  }
+
+  .sub-sec h1 {
+    font-size: 14px;  /* Reduced font size */
+    margin: 5px 0;
+  }
+
+  .sub-sec p {
+    font-size: 8px;  /* Reduced font size */
+    margin: 5px 0;
+  }
+
+  .purple-button {
+    width: 90%;  /* Full width */
+    font-size: 10px;  /* Reduced font size */
+    margin: 5px 0;
+    padding: 5px 0;
+  }
+
+  /* Cards Section */
+  .cards-head {
+    width: 100%;
+    padding: 5px 0;
+  }
+
+  .cards-head h1 {
+    font-size: 14px;  /* Smaller header */
+  }
+
+  .cards-head p {
+    font-size: 8px;  /* Reduced font size */
+    padding: 0 5px;
+  }
+
+  /* Cards */
+  .cards {
+    display: block; /* Stack cards vertically */
+    justify-content: center;
+    align-items: center;
+  }
+
+  #card {
+    width: 90%;  /* Full width */
+    height: 180px;  /* Smaller height */
+    margin: 5px auto;
+    background-color: #4a0982;
+    box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+  }
+
+  #card:hover {
+    transform: scale(1.05);
+    box-shadow: 6px 12px 30px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
+
+  #card div {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+  }
+
+  #card h1 {
+    text-align: center;
+    font-size: 12px;  /* Smaller text */
+    color: white;
+  }
+
+  /* Animated Cards Section */
+  .animated-cards {
+    margin-top: 20px;
+    background-color: #4a0982;
+    padding: 20px 0;
+  }
+
+  .animated-cards h1 {
+    margin: auto;
+    text-align: center;
+    font-size: 18px;  /* Smaller header */
+    color: white;
+  }
+
+  .anim-main {
+    display: block;
+    margin: 20px 0;
+    margin-left: 20px;
+  }
+
+  .card {
+    width: 90%;  /* Full width */
+    height: 230px;  /* Reduced height */
+    margin: 5px 0;
+    box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .card1, .card2 {
+    background-size: 120%;
+    background-position: center;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding: 10px;
+    transition: background-size 0.5s ease-in-out;
+  }
+
+  .card1:hover, .card2:hover {
+    background-size: 130%;
+    cursor: pointer;
+  }
+
+  .anim-text {
+    text-align: center;
+    padding: 5px 10px;
+  }
+
+  .recipesSpan {
+    color: white;
+    font-size: 10px;  /* Reduced font size */
+    padding: 2px 0;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    letter-spacing: 0.1ch;
+    margin: 5px;
+  }
+
+  .anim-text h2 {
+    font-size: 14px;  /* Reduced heading size */
+    letter-spacing: 0.01ch;
+    color: #d1a752;
+    margin: 5px;
+  }
+
+  .anim-text p {
+    font-size: 8px;  /* Reduced font size */
+    color: white;
+    font-family: "Franklin Gothic";
+    letter-spacing: 0.01ch;
+    margin: 5px;
+  }
+
+  .anim {
+    margin: auto;
+    width: 120px;  /* Adjusted width for mobile */
+  }
+
+  .card {
+    animation: slideInUp;
+    animation-duration: 2s;
+  }
 }

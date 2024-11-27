@@ -1,211 +1,401 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-.hero {
-  background-color: #4a0982;
-  width: 100%;
-  height: 700px;
-  padding: 80px 0px 0px;
-  border: 0px solid rgb(255, 255, 255);
-  display: flex;
-  justify-content: center;
-  box-sizing: border-box;
-  font-size: 16px;
-  font-family: Gibson-Regular, sans-serif;
-  font-weight: 400;
-  text-align: center;
-  line-height: 24px;
-  color: rgb(255, 255, 255);
-}
-.hero-left {
-  width: 574px;
-  height: 540px;
-  padding: 0px 56px 0px 32px;
-  border: 0px solid rgb(255, 255, 255);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  font-weight: 400;
-  text-align: center;
-  line-height: 24px;
-}
-.hero-right {
-  width: 608px;
-  height: 405px;
-  padding: 100px 100px 0px 0px;
-  border: 0px solid rgb(255, 255, 255);
-  font-size: 16px;
-  font-weight: 400;
-  text-align: left;
-  line-height: 24px;
-}
-.hero-right h1 {
-  font-size: 34px;
-  letter-spacing: 0.1ch;
-  margin-left: 16px;
-  padding: 0 0 26px;
-  line-height: 1.05;
-}
-.hero-right span {
-  border: 1px solid white;
-  padding: 5px;
-  border-radius: 10px;
-  margin-left: 16px;
-  text-align: center;
-}
-.hero-right p {
-  margin-left: 16px;
-  padding: 5px;
-  margin-top: 10px;
-}
-.golden {
-  height: 48px;
-  width: 240px;
-  padding: 20px 16px;
-  margin: 50px 15px;
-  font-size: 18px;
-  border-radius: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  color: #4a0982;
-  background: linear-gradient(to right, #d4af37, #f3e5ab, #d4af37, #f3e5ab);
-  transition: background-position 0.7s ease, transform 0.2s;
-  background-position: right;
-  letter-spacing: 0.2ch;
-  background-size: 200%;
-}
 
-.golden:hover {
-  cursor: pointer;
-  background-position: left;
-}
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
 
-/* Info */
-/* .info {
-    
-} */
+  .hero {
+    background-color: #4a0982;
+    width: 100%;
+    height: auto;
+    padding: 80px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: rgb(255, 255, 255);
+  }
 
-#ingredients,
-#nutri-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 800px;
-  height: 120px;
-  margin: auto;
-  color: #441775;
-  transition: border-top 0.3s ease, transform 0.2s;
-}
-#ingredients {
-  border-bottom: 1px solid #441775;
-}
-#ingredients:hover {
-  cursor: pointer;
-  border-top: 5px solid #f2d896;
-}
-#nutri-info:hover {
-  cursor: pointer;
-  border-top: 5px solid #f2d896;
-}
+  .hero-left {
+    width: 50%;
+    height: auto;
+    padding: 0 56px 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-left
+  {
+    margin-top: 120px;
+  }
 
-/* Note */
-.note {
-  width: 935px;
-  margin: 50px auto;
-}
-.note p {
-  font-size: 18px;
-  font-style: italic;
-  color: #441775;
-  letter-spacing: 0.1ch;
-  font-family: "Franklin Gothic";
-}
-.note span {
-  font-style: normal;
-  letter-spacing: normal;
-}
+  .hero-right {
+    width: 50%;
+    height: auto;
+    padding: 100px 100px 0 0;
+    text-align: left;
+  }
 
-/* Recipes */
+  .hero-right h1 {
+    font-size: 34px;
+    margin-left: 16px;
+    padding: 0 0 26px;
+    line-height: 1.05;
+    letter-spacing: 0.1ch;
+  }
 
-.recipes {
-  width: 100%;
-  height: 603px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-weight: 400;
-  background-color: #441775;
-}
-.recipe-left {
-  width: 533px;
-  height: 443px;
-  padding: 0px 40px;
-  margin: 0 170px;
-  color: white;
-}
-.recipe-left h1 {
-  font-size: 52px;
-  margin-top: 10px;
-}
-.recipesSpan {
-  color: gold;
-  font-size: 24px;
-  padding: 2px 0;
-  border-top: 2px solid gold;
-  border-bottom: 2px solid gold;
-  letter-spacing: 0.1ch;
-}
-.recipe-left p {
-  margin: 10px 0;
-  font-family: "Franklin Gothic";
-}
+  .hero-right span {
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 16px;
+    text-align: center;
+  }
 
-.recipe-right img {
-  margin-top: 3px;
-}
+  .hero-right p {
+    margin-left: 16px;
+    padding: 5px;
+    margin-top: 10px;
+    line-height: 1.5;
+  }
 
-/* Discover Recipes */
-.discover-rec {
-  height: 600px;
-  background: url("assets/coco-beans.webp");
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.sub-rec {
-  width: 473px;
-  /* height: 382px; */
-  text-align: center;
-}
-.sub-rec h1 {
-  font-size: 52px;
-  color: white;
-  letter-spacing: 0.1ch;
-  margin-top: 10px;
-}
-.sub-rec p {
-  color: white;
-  font-family: 'Franklin Gothic';
-  font-size: 16px;
-  letter-spacing: 0.05ch;
-  padding: 15px;
-}
-.sub-rec button {
-  width: 350px;
-  margin: 10px;
-}
-.sub-rec div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  .golden {
+    height: 48px;
+    width: 240px;
+    margin: 50px 15px;
+    font-size: 18px;
+    border-radius: 30px;
+    color: #4a0982;
+    background: linear-gradient(to right, #d4af37, #f3e5ab, #d4af37, #f3e5ab);
+    transition: background-position 0.7s ease, transform 0.2s;
+    background-position: right;
+    letter-spacing: 0.2ch;
+    background-size: 200%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .golden:hover {
+    cursor: pointer;
+    background-position: left;
+  }
+
+  #ingredients,
+  #nutri-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+    height: 120px;
+    margin: auto;
+    color: #441775;
+    border-bottom: 1px solid #441775;
+    padding: 10px 0;
+    transition: border-top 0.3s ease, transform 0.2s;
+  }
+
+  #ingredients:hover,
+  #nutri-info:hover {
+    cursor: pointer;
+    border-top: 5px solid #f2d896;
+  }
+
+  .note {
+    width: auto;
+    margin: 50px auto;
+    text-align: center;
+  }
+
+  .note p {
+    font-size: 18px;
+    font-style: italic;
+    color: #441775;
+    letter-spacing: 0.1ch;
+  }
+
+  .note span {
+    font-style: normal;
+    letter-spacing: normal;
+  }
+
+  .recipes {
+    width: 100%;
+    height: 603px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #441775;
+    color: white;
+  }
+
+  .recipe-left {
+    width: 533px;
+    height: 443px;
+    padding: 0 40px;
+    margin: 0 170px;
+  }
+
+  .recipe-left h1 {
+    font-size: 52px;
+    margin-top: 10px;
+  }
+
+  .recipesSpan {
+    color: gold;
+    font-size: 24px;
+    padding: 2px 0;
+    border-top: 2px solid gold;
+    border-bottom: 2px solid gold;
+    letter-spacing: 0.1ch;
+  }
+
+  .recipe-right img {
+    margin-top: 3px;
+    max-width: 100%;
+    /* height: auto; */
+  }
+
+  .discover-rec {
+    height: 600px;
+    background: url("assets/coco-beans.webp") no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sub-rec {
+    width: 473px;
+    text-align: center;
+  }
+
+  .sub-rec h1 {
+    font-size: 52px;
+    color: white;
+    letter-spacing: 0.1ch;
+    margin-top: 10px;
+  }
+
+  .sub-rec p {
+    color: white;
+    font-size: 16px;
+    letter-spacing: 0.05ch;
+    padding: 15px;
+  }
+
+  .sub-rec button {
+    width: 350px;
+    margin: 10px;
+  }
+
+  /* Responsive Styles */
+  @media (min-width: 584px) and (max-width: 933px) {
+    .hero {
+      flex-direction: column;
+      height: auto;
+      padding: 40px 0;
+    }
+  
+    .hero-left,
+    .hero-right {
+      width: 90%;
+      padding: 20px;
+      text-align: center;
+    }
+    .hero-left img
+    {
+      margin-left: 100px;
+    }
+    .hero-right h1 {
+      font-size: 30px;
+      margin-left: 50px;
+    }
+  
+    .hero-right p {
+      text-align: center;
+      margin-left: 50px;
+    }
+  
+    .golden {
+      width: 70%;
+      font-size: 16px;
+      margin-left: 150px;
+    }
+  
+    #ingredients,
+    #nutri-info {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      margin: 20px auto;
+      padding: 10px;
+    }
+  
+    .recipes {
+      flex-direction: column;
+      height: auto;
+      padding: 30px 0;
+    }
+    .golden1
+    {
+      margin-left: 75px;
+    }
+  
+    .recipe-left {
+      width: 90%;
+      margin: 20px auto;
+      text-align: center;
+    }
+  
+    .recipe-left h1 {
+      font-size: 36px;
+    }
+  
+    .recipe-right img {
+      width: 100%;
+      /* height: auto; */
+    }
+  
+    .discover-rec {
+      height: auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+  
+    .sub-rec {
+      width: 90%;
+    }
+  
+    .sub-rec h1 {
+      font-size: 36px;
+    }
+  
+    .sub-rec button {
+      width: 80%;
+      margin: 20px auto;
+    }
+  }
+  
+  
+  @media (max-width: 584px) {
+    .hero {
+      flex-direction: column;
+      height: auto;
+      padding: 20px 0;
+      text-align: center;
+    }
+  
+    .hero-left,
+    .hero-right {
+      width: 90%;
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .hero-left img {
+      max-width: 100%;
+      margin-left: 50px;
+      height: auto;
+    }
+  
+    .hero-right h1 {
+      font-size: 24px;
+      line-height: 1.2;
+      margin-left: 25px;
+    }
+  
+    .hero-right span {
+      font-size: 14px;
+      margin-left: 25px;
+      display: inline-block;
+      margin: 10px 0;
+    }
+  
+    .hero-right p {
+      font-size: 14px;
+      margin-left: 25px;
+      line-height: 1.4;
+      margin-top: 15px;
+    }
+  
+    .golden {
+      width: 90%;
+      font-size: 16px;
+      margin: 20px auto;
+    }
+  
+    #ingredients,
+    #nutri-info {
+      width: 90%;
+      height: auto;
+      margin: 15px auto;
+      padding: 10px;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    #ingredients h2,
+    #nutri-info h2 {
+      font-size: 18px;
+    }
+  
+    .recipes {
+      flex-direction: column;
+      height: auto;
+      padding: 20px 0;
+    }
+  
+    .recipe-left,
+    .recipe-right {
+      width: 90%;
+      margin: 10px auto;
+      text-align: center;
+    }
+  
+    .recipe-left h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+  
+    .recipe-left p {
+      font-size: 14px;
+    }
+  
+    .recipe-right img {
+      width: 100%;
+      /* height: auto; */
+    }
+  
+    .discover-rec {
+      height: auto;
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .sub-rec {
+      width: 90%;
+    }
+  
+    .sub-rec h1 {
+      font-size: 28px;
+      line-height: 1.2;
+    }
+  
+    .sub-rec p {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+  
+    .sub-rec button {
+      width: 90%;
+      font-size: 16px;
+      margin: 20px auto;
+    }
+  }
+  
+
 
 
 /* Section 2 */
