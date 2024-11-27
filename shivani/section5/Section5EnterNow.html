@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Enter Now</title>
+    <link rel="shortcut icon" type="x-icon" href="asset/logo1.png" />
     <link rel="stylesheet" href="section5.css" />
 <link
 rel="stylesheet"
@@ -13,9 +14,17 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
 </head>
   <body>
-    <header class="header">
+    <header class="header header--hide">
 
       <div class="logo">
         <a href="#" class="home">
@@ -23,14 +32,21 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         </a>
       </div>
 
-      <nav class="navigation">
-        <div class="nav_menu">
+      <nav class="nav">
+        <button class="hamburger" id="hamburger">&#9776;</button>
+        <div class="menu-container">
           <ul>
-            <li><a href="">HOME</a></li>
-            <li><a href="">FAQs</a></li>
-            <li><a href="">T&Cs</a></li>
+            <li>
+          MENU <i class="fa-solid fa-bars"></i>
+          <ul>
+            <li>HOME</li>
+            <li>FAQs</li>
+            <li>T&Cs</li>
+            
           </ul>
-        </div>
+        </li>
+        </ul>
+      </div>
       </nav>
     </header>
     <main>
