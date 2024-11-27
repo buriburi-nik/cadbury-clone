@@ -13,24 +13,40 @@
         <!-- Background video -->
         <video class="background-video" src="src/homepage/front_video.mp4" autoplay muted loop></video>
         
-        <!-- Logo -->
         <div class="content">
+            <!-- Logo -->
             <div class="logo">
-                <img src="src/200_Years_logo.png" alt="Cadbury Logo">
+                <img src="./src/200_Years_logo.png" alt="Logo">
             </div>
-            
-            <!-- Nav -->
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#about">ABOUT </a></li>
-                    <li><a href="#explore">EXPLORE </a></li>
-                    <li><a href="#products">PRODUCTS </a></li>
-                    <li><a href="#recipes">RECIPES</a></li>
-                    <li><a href="#gifting">GIFTING</a></li>
-                    <li><a href="#cadbury_fc">CADBURY FC</a></li>
-                </ul>
-            </nav>
 
+            <!-- Navigation Bar -->
+            <nav class="navbar">
+                <div class="dropdown">
+                    <a href="#">About <i class="fas fa-chevron-down" style="margin-left: 5px;"></i></i></a>
+                    <div class="dropdown-content">
+                        <a href="#" >Our Story</a>
+                        <a href="#">Timeline</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#">Explore  <i class="fas fa-chevron-down"style="margin-left: 5px;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">Sustainability</a>
+                        <a href="#">Cocoa Life</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#">Product  <i class="fas fa-chevron-down"style="margin-left: 5px;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#" style="text-decoration: none;">Boom Choco</a>
+                        <a href="#"style="text-decoration: none;">choco chips</a>
+                    </div>
+                </div>
+                <a href="#">Recipes</a>
+                <a href="#">Gifting</a>
+                <a href="#">Cadbury FC</a>
+                
+            </nav>
             <div class="search">
                 <button class="search-btn">
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"> class="search-icon" 
@@ -40,7 +56,7 @@
                   </button>
             </div>
         </div>
-
+     
         <!-- Hero Text and Button -->
         <div class="hero-text">
             <p class="heading">Send Free Cadbury Chocolate Secretly</p>

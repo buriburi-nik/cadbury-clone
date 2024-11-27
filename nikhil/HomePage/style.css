@@ -37,64 +37,120 @@ header {
     z-index: -1;
 }
 
+/*---------------------------------- navbar section--------------------------------------- */
 .content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    padding: 20px 0;
-    position: absolute;
-    top: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  align-items: center;
+  gap: 100px;
+  position: absolute;
+  top: 2px;
+  padding-top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
 }
 
-/* logo */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+  justify-content: space-between;
+  gap: 10px; 
+  
+ }
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  position: relative;
+  font-weight:600;
+  font-style: 1rem;
+  justify-content: space-between;
+  text-transform: uppercase;
+  
+}
+
+.navbar a:hover{
+  color: #ffcc00;
+  text-decoration: underline 3px;
+  text-underline-offset: 20px;
+  transition: ease-in-out;
+}
+
+.navbar .dropdown {
+  position: relative;
+}
+.navbar .dropdown-content {
+  display: none;
+  animation: fadeIn 0.5s ease 5s forwards;
+  position: absolute;
+  top: 50PX;
+  width: 100vw; 
+  line-height: 1rem;
+  z-index: 1000;
+  padding: 1rem 0;
+  animation: fadeIn 0.5s ease 2s forwards;
+}
+.navbar .dropdown-content a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  animation: fadeIn 0.5s ease 2s forwards;
+}
+
+.dropdown::before {
+  content: '';
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 200px;
+  background-color:#5b0d93;   
+  z-index: -1; 
+  opacity: 0;
+  transition: opacity 0.5s ease; 
+}
+
+  .dropdown:hover::before {
+      opacity: 1; 
+  }
+
+  /*----- Logo----- */
 .logo img {
-    height: 70px;
+  height: 75px;
+  position: relative;
+  left: 40%;
+  bottom: 5px;
 }
-
-/* nav bar */
-.navbar ul {
-    display: flex;
-    gap: 40px;
-    list-style: none;
-    padding: 0;
+/* ---- serch----- */
+.search{
+  position: relative;
+  right: 100px;
 }
-
-.navbar ul li a {
-    color: white;
-    font-size: 16px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.navbar ul li a:hover {
-    color: #e6c612;
-    text-decoration: underline 3px ;
-    text-underline-offset: 20px; 
-}
-
-/* Search Button */
-.search {
-    display: flex;
-    align-items: center;
-}
-
 .search-btn {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    background: none;
-    border: none;
-    color: rgb(223, 220, 220);
-    font-size: 16px;
-    cursor: pointer;
-    transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  color: rgb(223, 220, 220);
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s;
 }
 
 .search-icon {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 /* Hero Text Section */
@@ -459,22 +515,26 @@ header {
 
 .card1 {
   background-image: url("./src/Animate/1-anima.webp");
+  background-repeat: no-repeat;
 }
 
 .card2 {
   background-image: url("./src/Animate/2-anima.webp");
   margin-top: 90px;
+  background-repeat: no-repeat;
 
 }
 
 .card3 {
   background-image: url("./src/Animate/3-anima.webp");
   margin-top: 10px;
+  background-repeat: no-repeat;
 }
 
 .card4 {
   background-image: url("./src/Animate/4-anima.webp");
   margin-top: 90px;
+  background-repeat: no-repeat;
 }
 
 .anim-text {
@@ -912,71 +972,8 @@ background-image: url("./src/poster/p1\(2\).webp");
   width: 100%;
 }
 
-#title {
-  display: flex;
-  flex-direction: column; /* Align text vertically */
-  justify-content: center; /* Centers content vertically */
-  align-items: center; /* Centers content horizontally */
-  text-align: center; /* Centers text */
-  height: 100vh; /* Makes the div take the full height of the viewport */
-  color: rgb(240, 15, 15); /* Makes the text white for better visibility */
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-#title p {
-  margin: 10px 0; /* Adds spacing between paragraphs */
-  font-size: 24px; /* Adjust font size as needed */
-}
-
-#head {
-  font-size: 36px; /* Larger font size for the main heading */
-  font-weight: bold;
-}
 
 
-#card1{
-  width: 100%;
-  height: 300px;
-  /* border: 1px solid red; */
-  display: flex;
-  justify-content: center;
-  gap:40px;
-  align-items: center;
-}
-#card1>.cards{
-      width: 20%;
-      height: 96%;
-      border: 1px solid black;
-      border-radius: 10px;
-      background-size: contain;
-}
-
-
-
-#poster4{
-  width: 100%;
-  height: 1300px;
-  /* border: 1px solid black; */
-  display: flex;
-  background-image: url(./src/poster/p4BG.jpeg);
-  background-size: cover;
-}
-#poster4>div{
-  width: 50%;
-  height: 100%;
-  /* border: 1px solid black; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 50px;
-}
-
-#poster5{
-  width: 100%;
-  height: 500px;
-  /* border: 1px solid black; */
-}
 
 
 
