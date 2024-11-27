@@ -271,9 +271,10 @@ color: #fff;
 
 @media (max-width: 480px) {
 .content{
-  flex-direction:column;
+  flex-direction:row;
   padding: 10px;
   justify-content: center;
+  gap: 150px;
 }
   .hero-text .heading {
       font-size: 36px;
