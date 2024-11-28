@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Franklin Gothic Medium";
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 /* Header styles */
 .header {
@@ -197,8 +197,8 @@ i {
 @media (max-width: 768px) {
   .section1 img {
     width: 80%;
-      height: auto;
-      margin-top: 100px;
+    height: auto;
+    margin-top: 100px;
   }
 }
 
@@ -474,7 +474,7 @@ h4 {
   }
 
   .logo img {
-    height: 70px;
+    height: auto;
   }
 
   .section1 img {
