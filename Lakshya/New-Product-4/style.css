@@ -1,0 +1,1159 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Background Video */
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/*---------------------------------- navbar section--------------------------------------- */
+
+.hamburger {
+display: none;
+cursor: pointer;
+font-size: 24px;
+color: #fff;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 100px;
+  /*  */
+  position: absolute;
+  top: 1px;
+  padding: 20px;
+  left: 50%;   
+  transform: translateX(-50%);
+  z-index: 5;
+  width: 100%;
+  background-color: #4a0982;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 1rem;
+  justify-content: space-between;
+  /*  */
+  position: relative;
+  /* background-color: #441775; */
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  /*  */
+  position: relative;
+  /* justify-content: space-between; */
+}
+
+.navbar a:hover {
+  color: #ffcc00;
+  text-decoration: underline 3px;
+  text-underline-offset: 20px;
+  transition: ease-in-out 0.3s;
+}
+
+.navbar .dropdown {
+  position: relative;
+}
+.navbar .dropdown-content {
+  display: none;
+  animation: fadeIn 0.5s ease 5s forwards;
+  position: absolute;
+  top: 50PX;
+  width: 100vw; 
+  line-height: 1rem;
+  z-index: 1000;
+  padding: 1rem 0;
+  animation: fadeIn 0.5s ease 2s forwards;
+}
+.navbar .dropdown-content a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #ffcc00;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  animation: fadeIn 0.5s ease 2s forwards;
+  color: #1886ed;
+
+}
+
+.dropdown::before {
+  content: '';
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 200px;
+  background-color:#5b0d93;   /*color*/
+  z-index: -1; 
+  opacity: 0;
+  transition: opacity 0.5s ease; 
+}
+
+.dropdown:hover::before {
+      opacity: 1; 
+}
+
+/* Logo */
+.logo img {
+  height: 75px;
+  position: relative;
+  left: 40%;
+  bottom: 5px;
+}
+
+/* Search Button */
+.search {
+  position: relative;
+  right: 100px;
+}
+
+.search-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+@media (max-width: 768px) {
+  .content {
+      flex-direction: row; 
+      gap: 250px;
+      justify-content:center;
+      padding: 10px 30px;  
+  }
+  
+  .logo img {
+      height: 60px; 
+      left: 5%;
+      
+  }
+
+  .hamburger {
+      display: block; 
+  }
+
+  .navbar{
+    display: none;
+  }
+  .search{
+  display: none;
+  }
+  .hero-text {
+      left: 5%;
+      max-width: 90%;
+      text-align: center; 
+  }
+
+  .hero-text .heading {
+      font-size: 48px; 
+  }
+
+  .hero-button {
+      margin: 0 auto;    
+  }
+}
+
+@media (max-width: 480px) {
+.content{
+  flex-direction:column;
+  padding: 10px;
+  justify-content: center;
+}
+  .hero-text .heading {
+      font-size: 36px;
+  }
+
+  .logo{
+    left: 50%;
+  }
+
+  .hero-button {
+      font-size: 14px;
+      padding: 10px 20px;
+      align-items: center;
+  }
+}
+
+
+
+.hero {
+  background-color: #4a0982;
+  width: 100%;
+  height: auto;
+  padding: 80px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: rgb(255, 255, 255);
+}
+
+.hero-left {
+  width: 50%;
+  height: auto;
+  padding: 0 56px 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-left {
+  margin-top: 120px;
+}
+
+.hero-right {
+  width: 50%;
+  height: auto;
+  padding: 100px 200px 0 0;
+  text-align: left;
+}
+
+.hero-right h1 {
+  font-size: 34px;
+  margin-left: 16px;
+  padding: 0 0 26px;
+  line-height: 1.05;
+  letter-spacing: 0.1ch;
+}
+
+.hero-right span {
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  margin-left: 16px;
+  text-align: center;
+}
+
+.hero-right p {
+  margin-left: 16px;
+  padding: 5px;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.golden {
+  height: 48px;
+  width: 240px;
+  margin: 50px 15px;
+  font-size: 18px;
+  border-radius: 30px;
+  color: #4a0982;
+  background: linear-gradient(to right, #d4af37, #f3e5ab, #d4af37, #f3e5ab);
+  transition: background-position 0.7s ease, transform 0.2s;
+  background-position: right;
+  letter-spacing: 0.2ch;
+  background-size: 200%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.golden:hover {
+  cursor: pointer;
+  background-position: left;
+}
+
+#ingredients,
+#nutri-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 800px;
+  height: 120px;
+  margin: auto;
+  color: #441775;
+  border-bottom: 1px solid #441775;
+  padding: 10px 0;
+  transition: border-top 0.3s ease, transform 0.2s;
+}
+
+#ingredients:hover,
+#nutri-info:hover {
+  cursor: pointer;
+  border-top: 5px solid #f2d896;
+}
+
+.note {
+  width: auto;
+  margin: 50px 50px;
+  text-align: center;
+}
+
+.note p {
+  font-size: 18px;
+  font-style: italic;
+  color: #441775;
+  letter-spacing: 0.1ch;
+}
+
+.note span {
+  font-style: normal;
+  letter-spacing: normal;
+}
+
+.recipes {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #441775;
+  color: white;
+}
+
+.recipe-left {
+  width: 533px;
+  height: auto;
+  padding: 0 40px;
+  margin: auto;
+  margin-left: 200px;
+  margin-top: 50px;
+}
+
+.recipe-left h1 {
+  font-size: 52px;
+  margin-top: 10px;
+}
+
+.recipesSpan {
+  color: gold;
+  font-size: 24px;
+  padding: 2px 0;
+  border-top: 2px solid gold;
+  border-bottom: 2px solid gold;
+  letter-spacing: 0.1ch;
+}
+
+.recipe-right img {
+  margin-top: 3px;
+  max-width: 100%;
+  height: auto;
+}
+
+.discover-rec {
+  height: 600px;
+  background: url("assets/coco-beans.webp") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-rec {
+  width: 473px;
+  text-align: center;
+}
+
+.sub-rec h1 {
+  font-size: 52px;
+  color: white;
+  letter-spacing: 0.1ch;
+  margin-top: 10px;
+}
+
+.sub-rec p {
+  color: white;
+  font-size: 16px;
+  letter-spacing: 0.05ch;
+  padding: 15px;
+}
+
+.sub-rec button {
+  width: 350px;
+  margin: auto;
+}
+
+/* Responsive Styles */
+@media (min-width: 584px) and (max-width: 933px) {
+  .hero {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 0;
+    padding-left: 80px;
+  }
+
+  .hero-left,
+  .hero-right {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .hero-right h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .hero-right p {
+    text-align: center;
+  }
+  
+
+  .golden {
+    width: 300px;
+    font-size: 16px;
+    margin: 20px auto;
+  }
+
+  #ingredients,
+  #nutri-info {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  .recipes {
+    flex-direction: column;
+    height: auto;
+    padding: 30px 0;
+  }
+
+  .recipe-left {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+    height: auto;
+  }
+
+  .recipe-left h1 {
+    font-size: 36px;
+  }
+
+  .recipe-right img {
+    width: 100%;
+    height: auto;
+  }
+
+  .discover-rec {
+    height: auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .sub-rec {
+    width: 90%;
+  }
+
+  .sub-rec h1 {
+    font-size: 36px;
+  }
+
+  .sub-rec button {
+    width: 300px;
+    margin: 20px auto;
+  }
+}
+
+
+@media (max-width: 584px) {
+  .hero {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+
+    text-align: center;
+  }
+
+  .hero-left,
+  .hero-right {
+    width: 90%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .hero-left img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .hero-right h1 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .hero-right span {
+    font-size: 14px;
+    display: inline-block;
+    margin: 10px 0;
+  }
+
+  .hero-right p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-top: 15px;
+  }
+
+  .golden {
+    width: 300px;
+    font-size: 16px;
+    margin: 20px auto;
+  }
+
+  #ingredients,
+  #nutri-info {
+    width: 90%;
+    height: auto;
+    margin: 15px auto;
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #ingredients h2,
+  #nutri-info h2 {
+    font-size: 18px;
+  }
+
+  .recipes {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .recipe-left,
+  .recipe-right {
+    width: 90%;
+    height: auto;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .recipe-left h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .recipe-left p {
+    font-size: 14px;
+  }
+
+  .recipe-right img {
+    width: 100%;
+    height: auto;
+  }
+
+  .discover-rec {
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .sub-rec {
+    width: 90%;
+  }
+
+  .sub-rec h1 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .sub-rec p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .sub-rec button {
+    width: 300px;
+    font-size: 16px;
+    margin: 20px auto;
+  }
+}
+
+
+
+
+/* Section 2 */
+
+.discover-like {
+background: url("assets/back-wall.webp");
+width: 100%;
+height: 619px;
+margin-top: 100px;
+}
+#dl-heading {
+font-size: 45px;
+text-align: center;
+color: #4a0982;
+}
+.cards-container {
+overflow-x: auto; /* Enables horizontal scrolling */
+display: flex;
+overflow-y: hidden;
+padding: 10px 0;
+margin-top: 20px; 
+scrollbar-color: #4a0982 #fff;
+}
+
+.cards {
+display: flex;
+flex-wrap: nowrap; 
+gap: 20px; 
+padding-left: 10px; 
+}
+
+#card {
+width: 296px;
+height: 387px;
+background: linear-gradient(to bottom, #e5daed 50%, #4a0982 50%);
+border-radius: 15px;
+box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.3);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+justify-content: space-between;
+}
+#card:hover {
+transform: scale(1.05); 
+box-shadow: 6px 12px 30px rgba(0, 0, 0, 0.4);
+cursor: pointer;
+}
+
+#card .top-head {
+color: #441775;
+background-color: #ebc373;
+font-size: 12px;
+margin: 10px;
+width: 130px;
+padding: 2px;
+border-radius: 7px;
+text-align: center;
+}
+
+.up {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 100px;
+}
+.description {
+font-size: 24px;
+color: white;
+padding-top: 20px;
+text-align: center;
+}
+#card {
+display: inline-block;
+margin: 0 0.5rem;
+animation: backInUp; 
+animation-duration: 3s;
+}
+
+
+
+@media (max-width: 400px) {
+.hero {
+  flex-direction: column;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.hero-left,
+.hero-right {
+  width: 90%;
+  padding: 10px;
+  text-align: center;
+}
+
+.hero-right h1 {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.hero-right span {
+  font-size: 12px;
+  padding: 4px;
+}
+
+.hero-right p {
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.golden {
+  width: 100%;
+  font-size: 14px;
+  margin: 10px auto;
+}
+
+#ingredients,
+#nutri-info {
+  width: 100%;
+  margin: 10px auto;
+  flex-direction: column;
+  text-align: center;
+  padding: 5px;
+}
+
+.recipes {
+  flex-direction: column;
+  padding: 10px 0;
+}
+
+.recipe-left,
+.recipe-right {
+  width: 100%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.recipe-left h1 {
+  font-size: 24px;
+}
+
+.recipe-right img {
+  width: 100%;
+  height: auto;
+}
+
+.discover-rec {
+  padding: 10px;
+  text-align: center;
+}
+
+.sub-rec {
+  width: 100%;
+}
+
+.sub-rec h1 {
+  font-size: 24px;
+}
+
+.sub-rec p {
+  font-size: 12px;
+}
+
+.sub-rec button {
+  width: 100%;
+  font-size: 14px;
+}
+
+.discover-like {
+  height: auto;
+  padding: 20px 10px;
+  background-size: cover;
+}
+
+#dl-heading {
+  font-size: 28px;
+}
+
+.cards-container {
+  padding: 10px 5px;
+}
+
+.cards {
+  gap: 10px;
+}
+
+#card {
+  width: 260px;
+  height: auto;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+#card .top-head {
+  font-size: 10px;
+  padding: 2px;
+  width: auto;
+}
+
+.description {
+  font-size: 18px;
+}
+}
+
+
+.cadbury-stories {
+text-align: center;
+padding: 2rem 1px 0px 1px;
+background-image: url('https://images.ctfassets.net/pmzhtobns06n/3VOj7B2ODRaKaqQUEwr0eJ/9de6ee9ec9edbd376d84a94ab1fbfe20/Background_Texture.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+color: #5a2d82;
+height: 800px;
+
+}
+
+.cadbury-stories .scontent h1 {
+margin-top: 2rem;
+font-size: 46px;
+margin-bottom: 1rem;
+font-weight: bold;
+letter-spacing: 1px;
+text-transform: uppercase;
+}
+
+.cadbury-stories .scontent p {
+font-size: 1.2em;
+line-height: 1.8;
+color: #666;
+}
+
+.images {
+display: flex;
+flex-wrap: nowrap; 
+justify-content: center;
+gap: 20px;
+margin-top: 2em;
+margin-bottom: 1rem;
+}
+
+.image {
+position: relative;
+width: 300px;
+height: 300px;
+overflow: hidden;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform 0.3s ease;
+}
+
+.image:hover {
+transform: scale(1.05);
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#image-1 {
+margin-top: 100px;
+width: 258px;
+height: 254px;
+}
+
+#image-2 {
+margin-top: 20px;
+width: 316px;
+height: 312px;
+}
+
+#image-3 {
+margin-top: -10px;
+width: 374px;
+height: 372px;
+}
+
+#image-4 {
+margin-top: -10px;
+width: 256px;
+height: 252px;
+}
+
+#image-5 {
+margin-top: 20px;
+width: 318px;
+height: 314px;
+}
+
+
+
+/* Hazelnut section */
+.cadbury-stories{
+width: 100%;
+height: auto;
+}
+/* .hazelnut {
+position: relative;
+width: 600px;
+max-width: 234px;
+bottom: 120px;
+left: 970px;
+}
+
+.hazelnut-image {
+width: 120%;
+height: auto;
+display: flex;
+} */
+
+
+@media (max-width: 768px) {
+.images {
+  flex-wrap: wrap; 
+  justify-content: center; 
+}
+
+.image {
+  width: 45%; 
+  height: 200px; 
+}
+
+#image-1,
+#image-2,
+#image-3,
+#image-4,
+#image-5,
+#image-6 {
+  margin-top: 10px; 
+}
+
+.image img {
+    width: 100%; 
+    height: 100%;
+}
+
+.hazelnut {
+  bottom: 20;
+  left: 0%;
+  max-width: 25%; 
+}
+}
+/* ====================================================================================================== */
+/* visit us */
+/* ====================================================================================================== */
+/* WHY NOT VISIT Section */
+.visit-us {
+padding: 50px 20px;
+text-align: center;
+background-color: #f9f9f9;
+}
+
+.visit h1 {
+font-size: 46px;
+color: #45297c;
+margin-bottom: 30px;
+letter-spacing: 1.5px;
+}
+
+/* Cards Container */
+.cards-container-end {
+display: flex;
+justify-content: center;
+flex-wrap: wrap; 
+gap: 20px; 
+margin-top: 2rem;
+}
+
+/* Individual Card */
+.imgCard-end {
+position: relative; 
+width: 300px; 
+height: 350px; 
+background-color: #4B0983;
+border-radius: 20px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+text-align: center;
+transition: transform 0.3s ease;
+}
+
+.imgCard-end:hover {
+transform: translateY(-5px);
+box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Image */
+.card-img-end img {
+width: 100%;
+height: 225px; 
+object-fit: cover; 
+}
+
+/* Card Text */
+.text-box-end {
+padding: 15px;
+background-color: #4B0983; 
+align-items: center;
+justify-content: center;
+}
+
+.text-box-end h4 {
+color: white;
+text-align: center;
+padding: 20px;
+font-size: 24px;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+.imgCard-link-end {
+text-decoration: none; 
+color: inherit; 
+display: block; 
+}
+
+.imgCard-link-end:hover .imgCard-end {
+transform: scale(1.05); 
+transition: transform 0.3s ease; 
+}
+
+@media (max-width: 768px) {
+.cards-container-end {
+    flex-direction: column;
+    align-items: center; 
+}
+
+.imgCard-end {
+    width: 100%; 
+    max-width: 320px;
+}
+}
+/* ================================================================================================ */
+/* -------------------------------------------pouring --------------------------------------------- */
+/* ================================================================================================ */
+
+#pouring {
+width: 100%;
+height: 300px;
+background-size: contain;
+background-repeat: no-repeat;
+background-color: rgb(75, 9, 132);
+display: flex;
+justify-content: right; 
+align-items: center; 
+}
+
+#pouring img {
+width: 20%;
+margin-right: 50px;
+}
+
+@media (max-width: 768px) {
+#pouring {
+    justify-content: center; 
+    width: 100%;
+    height: auto;
+}
+
+#pouring img {
+    margin-right: 0;
+    width: 100%;
+}
+}
+
+/* ======================================================================= */
+/* footer */
+/* ======================================================================= */
+/* ======================================================================= */
+.footer {
+background-color: #fff;
+padding: 30px 20px;
+border-top: 2px solid #4a1e8c;
+}
+
+/* Top Section: Logo and Social Media */
+.footer-top {
+display: flex;
+justify-content: space-between;
+align-items: center;
+max-width: 1200px;
+margin: 0 auto;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
+}
+
+.footer-logo img {
+max-width: 400px;
+}
+
+.footer-icon {
+display: flex;
+gap: 15px;
+}
+
+.footer-icon a {
+font-size: 30px;
+color: #4a1e8c;
+transition: color 0.3s;
+}
+
+/* Bottom Section */
+.footer-bottom {
+display: flex;
+justify-content: space-between;
+align-items: center;
+max-width: 1200px;
+margin: 0 auto;
+margin-top: 20px;
+}
+
+.footer-bottom .copyright {
+flex: 1;
+color: #4a1e8c; 
+font-size: 14px;
+text-align: left;
+}
+
+.footer-links {
+display: flex;
+gap: 15px;
+justify-content: flex-end; 
+}
+
+.footer-links a {
+font-size: 12px;
+text-decoration: none;
+color: #4a1e8c;
+font-weight: bold;
+transition: color 0.3s;
+}
+@media (max-width: 786px){
+.footer-top{
+  flex-direction: column;
+  text-align: center;
+  gap: 60px;
+}
+.footer-logo img{
+    width: 50%;
+    height: 50%;
+}
+
+.footer-bottom{
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 20p;
+}
+
+.footer-bottom .copyright {
+    text-align: center; 
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+
+}
