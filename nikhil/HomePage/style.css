@@ -270,26 +270,29 @@ color: #fff;
 }
 
 @media (max-width: 480px) {
-.content{
-  flex-direction:row;
-  padding: 10px;
-  justify-content: center;
-  gap: 150px;
-}
-  .hero-text .heading {
-      font-size: 36px;
+  .content{
+    flex-direction:row;
+    padding: 5px;
+    justify-content: center;
+    gap: 150px;
   }
-
-  .logo{
-    left: 50%;
+    .hero-text .heading {
+        font-size: 36px;
+    }
+  
+    .logo{
+      left: 50%;
+      /* top:100px; */
+      width: 50%;
+      padding-top: 20px;
+    }
+  
+    .hero-button {
+        font-size: 14px;
+        padding: 10px 20px;
+        align-items: center;
+    }
   }
-
-  .hero-button {
-      font-size: 14px;
-      padding: 10px 20px;
-      align-items: center;
-  }
-}
 /*==============================================================================================*/
 /* ----------------------------------------New-Creation---------------------------------------- */
 /*==============================================================================================*/
