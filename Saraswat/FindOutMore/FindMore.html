@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    body{
+        background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 50 50' style='enable-background:new 0 0 50 50%3B' xml:space='preserve'%3E%3Cstyle type='text/css'%3E.st1%7Bopacity:0.3%3Bfill:%23FFFFFF%3B%7D.st3%7Bopacity:0.1%3Bfill:%23FFFFFF%3B%7D%3C/style%3E%3Ccircle class='st1' cx='5' cy='8' r='1'/%3E%3Ccircle class='st1' cx='38' cy='3' r='1'/%3E%3Ccircle class='st1' cx='12' cy='4' r='1'/%3E%3Ccircle class='st1' cx='16' cy='16' r='1'/%3E%3Ccircle class='st1' cx='47' cy='46' r='1'/%3E%3Ccircle class='st1' cx='32' cy='10' r='1'/%3E%3Ccircle class='st1' cx='3' cy='46' r='1'/%3E%3Ccircle class='st1' cx='45' cy='13' r='1'/%3E%3Ccircle class='st1' cx='10' cy='28' r='1'/%3E%3Ccircle class='st1' cx='22' cy='35' r='1'/%3E%3Ccircle class='st1' cx='3' cy='21' r='1'/%3E%3Ccircle class='st1' cx='26' cy='20' r='1'/%3E%3Ccircle class='st1' cx='30' cy='45' r='1'/%3E%3Ccircle class='st1' cx='15' cy='45' r='1'/%3E%3Ccircle class='st1' cx='34' cy='36' r='1'/%3E%3Ccircle class='st1' cx='41' cy='32' r='1'/%3E%3C/svg%3E");
+         background-position: 0px 0px;
+        animation: animatedBackground 10s linear infinite;
+    }
+    @keyframes animatedBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0px 300px;
+  }
+}
+
+    .container1{
+        background-image: url('https://secretsanta.cadbury.co.uk/images/background-purple-vignette-landscape-2.jpg');
+        background-size: 1500px 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-bottom: 10px goldenrod;
+        height: 1200px;
+        z-index: 0;
+    }
+    .logo{
+        border: none;
+        position: relative;
+        bottom: 130px;
+    }
+    .logo img{
+        height: 71%;
+        width: 91%;
+        position:relative;
+     }
+    .writingbeforevideo{
+        border: none;
+        color: white;
+        font-size: 25px;
+        width: 500px;
+        text-align: center;
+        position: relative;
+        bottom: 180px;
+    }
+   
+    .video{
+        
+         border: 2px solid rgb(255, 255, 255);
+         height: 500px;
+         width: 900px;
+         object-fit: cover;
+         position: relative;
+         bottom: 170px;
+        
+     
+    }
+     .writingaftervideo {
+        
+        position: relative;
+        top: 40px;
+        color: white;
+        height: 50px;
+        width: 32%;
+        text-align: center;
+        align-content: center;
+        top: -70px;
+        
+    }
+    
+    .container3{
+        background-size: 1440px auto;
+        height: 900px;
+        position: relative;
+        bottom: 41px;
+        background-color: #37125a;
+        
+    }
+    .container4{
+        height: 230px;
+        text-align: center;
+        color: rgb(64, 0, 103);
+        h4{
+            position: relative;
+            left: 600px;
+            width: 19%;
+        }
+    
+    }
+    .container5{
+        display:flex;
+        background-size: 1500px 100%;
+        height: 1400px;
+        background-color:  #37125a;
+    }
+   
+    .container2{
+        
+        text-align: center;
+        border: 6px solid goldenrod;
+        height: 700px;
+        position: relative;
+        top: -21px;
+        
+    }
+    .card{
+        border:none;
+        height: 600px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        transform: translateX(0);
+        transition: transform 0.5s ease;
+       
+    }
+    .choco1 ,.choco2,.choco3{
+        border:none;
+        justify-content: space-between;
+        height: 100%;
+        width: 25%;
+        opacity: 0.2;
+        color: #37125a;
+    }
+    .choco1:hover {
+        opacity: 1;
+    }
+    .choco2:hover{
+        opacity: 1;
+    }
+    .choco3:hover{
+        opacity: 1;
+    }
+    .card p{
+        width: 70%;
+        position: relative;
+        left: 55px;
+    }
+    .card img{
+        border-radius: 120px;
+        border: 2px solid gold;
+        box-shadow: 0 10px 10px 0;
+    }
+    .button1{
+          position:relative;
+          right: 1px ;
+          transition: background-color 0.3s ease;
+
+    }
+    
+    .button2{
+        position: relative;
+        left: 1px;
+    }
+    .writtingcontainer3{
+        text-align: center;
+        position: relative;
+        top: 40px;
+    }
+    .chobi1{
+        display: flex;
+        border: 4px solid white;
+        position:relative;
+        top: 50px;
+        left: 100px;
+        height: 257px;
+        width: 320px;
+        border-radius: 16px;
+        background-color: goldenrod;
+        text-align: center;
+        img{
+            animation: appear 1ms linear;
+       animation-timeline: view();
+       animation-range: entry 0%;
+        }
+        
+    }
+    .chobi1:hover{
+        animation: appear 1ms linear;
+       animation-timeline: view();
+       animation-range: entry 2%;
+
+      
+    }
+    @keyframes appear{
+    from{
+        opacity: 0;
+        transform: translateY(300px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+    
+    .onecontainer5 ,.twocontainer5{
+        border: 4px solid white;
+        position:relative;
+        top: 50px;
+        left: 370px;
+        height: 725px;
+        width: 370px;
+        border-radius: 16px;
+        background-color: goldenrod;
+        text-align: center;
+        margin:10px;
+        img{
+            height:100%;
+            width:100%;
+        }
+    }
+    .threecontainer5 img{
+        position:relative;
+        bottom:600px;
+        width: 1500px;
+    }
+    .hover{
+        position: relative;
+        top: 100px;
+        
+        
+    }
+    .circle{
+        height: 30px;
+        width: 5px;
+    }
+    .trigger{
+        position:relative;
+        left: 430px;
+        bottom: -210px;
+        font-size: 40px;
+    }
+    .container3logo{
+   
+        img{
+            
+            position:relative;
+            top: 240px;
+            left :510px;
+        }
+       
+    }
+   html, body{
+    margin: 0;
+    height: 70%;
+   }
+   .manage{
+    border: 2px solid;
+    height: 4600px;
+    overflow: hidden;
+   }
+   .writtingbeforecard{
+    font-size: 30px;
+    color:#37125a;
+   }
+   .writtingcontainer3{
+    font-size: 20px;
+    color: white;
+   }
+   
+</style>
+<body>
+    <main class="manage">
+    <section  name="first">
+        <div class="container1">
+           
+                <div class="logo">
+                     <img src="https://secretsanta.cadbury.co.uk/images/secret-santa-logo.png" alt="" class="santa">
+                </div>
+                <br>
+                <div class="writingbeforevideo">
+                     <h1>WELCOME TO THE <splan style=" color: #d0a651;"> CADBURY SECRET<br>SANTA POSTAL SERVICE </splan></h1>
+                    
+                </div>
+                <br>
+                 <div class="video">
+                     <video src="https://secretsanta.cadbury.co.uk/media/video-tvc-uk-2024.mp4" height="500px" width="900px" controls muted playsinline preload="auto"></video> 
+                 
+                </div>
+                <div class="writingaftervideo">
+                    <h3>This Christmas, for a chance to send a free chocolate bar in secret to someone special you need to find one of our Cadbury Secret Santa Posters popping up all over the country.</h3>
+                    <h3>Find a poster, scan the QR code and see if a bar is available for you to send to someone special for free</h3>
+                </div>
+        </div>
+    </section>
+    <hr style="height: 3px; color:goldenrod;z-index: 1;">
+    <section name="secound">
+        <div class="container2">
+            <div class="writingbeforecard">
+                <h1 style="font-size: 50px;color: #d0a651">HOW IT WORKS?</h1>
+            </div>
+            <div class="hover">
+                <h1 style="font-size: 50px;color: #d0a651;position:relative; top:90px;">HEY HOVER ON ME!</h1>
+                
+            </div>
+            <div class="card">
+                <div class="choco1">
+                    <img height="40%" width="65%" src="step1choco.png" alt="Look out for a poster" title="Look out for a poster">
+                    <h3>STEP 1</h3>
+                    <h1>Look out for a poster</h1>
+                    <p>Look out for one of our Cadbury Secret Santa Postal Services near you. They're popping up in posters all over the country, in bs stops, shopping centres and just around town.</p>
+                </div>
+
+               
+
+                <div class="choco2">
+                    <img height="40%" width="65%" src="step2choco.png" alt="Look out for a poster" title="Look out for a poster">
+                    <h3>STEP 2</h3>
+                    <h1>Scan the QR code</h1>
+                    <p>Scan the code on the poster to open the Postal Service on your phone.</p>
+                </div>
+
+               
+   
+                <div class="choco3">
+                    <img height="40%" width="65%" src="step3choco.png" alt="Look out for a poster" title="Look out for a poster">
+                    <h3>STEP 3</h3>
+                    <h1>Send a secret chocolate bar</h1>
+                    <p>Think of who you'd like to send it to, choose their favourite bar and, if we have one in stock, you could bring a smile to their face</p>
+                </div>
+              
+            </div>
+         </div>
+     </section>
+    <section name="three">
+       <div class="container3">
+            <div class="writtingcontainer3"><h1 >HOW TO</h1><h1>FIND A POSTER</h1><h3 style="position: relative; top:470px;">They look just like this..</h3></div>
+           
+            <div class="chobi1">
+                <img class="anime1" style="height: 140%; position:relative; right: 105px;bottom: 50px;" src="BusStop.png">
+                <img class="anime2" style="height: 140%; position:relative; right: 105px;bottom: 50px;" src="TrainStation.png">
+                <img class="anime3" style="height: 140%; position:relative; right: 105px;bottom: 50px;" src="LocalHighStreets.png">
+            </div>
+            <div class="container3logo">
+                <img style="height: 220px;" src="Jeffwithlogo.png">
+            </div>
+       </div>
+
+    </section>
+    <section name="four">
+        <div class="container4">
+            <h1>Goat a question?</h1>
+            <h4>Head to our FAQ page for our further help and information</h4>
+            <img style="position: relative;right:13px ;height: 21%;" src="buttonvisitfaq.png">
+        </div>
+    </section>
+    <section>
+        <div class="container5">
+            <div class="onecontainer5">
+                <img src="Big1.png">
+            </div>
+            <div class="twocontainer5">
+                <img style="position:relative; right: 0px;" src="Big2.png">
+            </div>
+        </div>
+        <div class="threecontainer5">
+             <img src="Big3.png">
+        </div>
+     
+    </section>
+</main>
+</body>
+</html>
