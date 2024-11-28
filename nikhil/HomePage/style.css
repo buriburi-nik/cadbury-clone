@@ -1144,8 +1144,9 @@ transition: transform 0.3s ease;
   }
 
   .hazelnut {
-    position: relative; /* Add positioning context */
-    bottom: 20px; /* Corrected value for proper positioning */
+    position: relative; 
+    display: none;
+    bottom: 20px; 
     left: 0%;
     max-width: 25%;
   }
